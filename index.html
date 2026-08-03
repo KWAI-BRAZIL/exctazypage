@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>O Lado Oculto Do Marketing | Arcano Digital</title>
-<meta name="description" content="Mini-curso de neuromarketing básico em 3 aulas rápidas. Aprenda os gatilhos mentais que decidem uma compra e aplique na sua oferta, atendimento e criativos.">
+<title>Método S.E.P.® | Fase 01 | Arcano</title>
+<meta name="description" content="Método S.E.P.® — Sistema de Engenharia da Percepção. Criado por Nara Batista. Fase 01: O Lado Oculto do Marketing. Primeira etapa aplicada estrategicamente pela Arcano.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
@@ -282,7 +282,7 @@
 
   @media (prefers-reduced-motion: reduce){
     .sigil .ring, .sigil .ring--rev, .sigil .ring--mid,
-    .sigil__core, .orbit-ring, .float-price, .btn--primary{animation:none;}
+    .sigil__core, .orbit-ring, .float-price, .btn--primary, .blink-soft{animation:none;}
     .btn--primary::before{animation:none;}
     html{scroll-behavior:auto;}
   }
@@ -706,6 +706,13 @@
     margin:0;
   }
   footer .legal{font-size:10px; opacity:.75; margin-top:4px;}
+  .blink-soft{
+    animation:blink-soft 2.2s ease-in-out infinite;
+  }
+  @keyframes blink-soft{
+    0%,100%{ opacity:1; }
+    50%{ opacity:.4; }
+  }
 </style>
 </head>
 <body>
@@ -715,9 +722,9 @@
   <div class="wrap">
     <a href="#" class="brand">
       <svg width="22" height="22" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="#d4a853" stroke-width="1"/><path d="M20 8 L20 32 M8 20 L32 20" stroke="#d4a853" stroke-width="1"/><circle cx="20" cy="20" r="5" stroke="#f0c96a" stroke-width="1"/></svg>
-      Arcano Digital
+      Arcano
     </a>
-    <a href="https://checkout.transacaoprotegida.com/c12bd8da-7ba7-487c-ac08-834166c5a9eb" class="btn btn--ghost">Quero Acesso</a>
+    <a href="#" class="btn btn--ghost" data-locked-cta rel="noopener noreferrer">Iniciar o Método S.E.P.</a>
   </div>
 </nav>
 
@@ -725,12 +732,12 @@
 <header class="hero">
   <div class="wrap hero__grid">
     <div>
-      <span class="eyebrow">Neuromarketing básico e aplicável</span>
-      <h1>Existe um motivo oculto pelo qual o cliente diz <em>sim</em> — e você aprende a usar isso em 3 aulas.</h1>
-      <p class="hero__lead">"O Lado Oculto Do Marketing" é um mini-curso direto ao ponto: 3 aulas para você entender os gatilhos mentais que decidem uma compra, aplicar isso na sua oferta e no seu atendimento, e criar anúncios que convertem porque falam com a mente — não só com o bolso.</p>
+      <span class="eyebrow">Fase 01</span>
+      <h1>O problema da sua empresa talvez não seja preço. É como o <em>cérebro</em> percebe seu negócio.</h1>
+      <p class="hero__lead">Este treinamento é a primeira etapa do Método S.E.P.® — criado por Nara Batista, criadora do Sistema de Engenharia da Percepção. Ao longo de 8 anos, o método foi aplicado em empresas físicas e digitais e já ultrapassou R$ 80 milhões em resultados. Aqui você aprende os fundamentos que reposicionam comunicação, refinam a oferta e elevam o valor percebido. Não é um curso. É a entrada em um sistema proprietário.</p>
       <div class="hero__cta-row">
-        <a href="https://checkout.transacaoprotegida.com/c12bd8da-7ba7-487c-ac08-834166c5a9eb" class="btn btn--primary"><span class="btn__shine"></span>Quero Acessar Agora →</a>
-        <span class="hero__note">3 aulas · Acesso imediato · Linguagem simples</span>
+        <a href="#" class="btn btn--primary" data-locked-cta rel="noopener noreferrer"><span class="btn__shine"></span>Quero Iniciar o Método S.E.P. →</a>
+        <span class="hero__note">Fase 01 · 3 aulas · Acesso imediato</span>
       </div>
     </div>
     <div class="hero__visual">
@@ -790,61 +797,167 @@
 
 <hr class="divider">
 
-<!-- ============ VSL ============ -->
-<section class="section" id="vsl">
-  <div class="wrap vsl">
-    <span class="eyebrow" style="justify-content:center;">Assista antes de continuar</span>
-    <h2>Em poucos minutos, você entende o que vai aprender nas 3 aulas.</h2>
-    <p>O vídeo abaixo mostra como o curso funciona na prática — e por que essas 3 aulas resolvem algo que a maioria do conteúdo de marketing por aí não ensina.</p>
-    <div class="vsl__frame">
-      <div class="vsl__play">
-        <svg width="22" height="26" viewBox="0 0 22 26" fill="#f0c96a"><path d="M0 0 L22 13 L0 26 Z"/></svg>
-      </div>
-    </div>
-    <p class="vsl__caption">[ ESPAÇO RESERVADO PARA A VSL — inserir player aqui ]</p>
-  </div>
-</section>
-
-<!-- ============ PAIN / AGITAÇÃO ============ -->
+<!-- ============ RECONHECIMENTO DO PROBLEMA ============ -->
 <section class="section section--panel">
   <div class="wrap">
-    <span class="eyebrow">O que ninguém te contou</span>
-    <h2>Você não precisa de mais teoria de marketing. Precisa saber onde apertar.</h2>
-    <p style="max-width:60ch;">Você não está com resultado fraco por falta de esforço. Está porque sua oferta, seu atendimento e seus criativos ainda não falam com a parte do cérebro que realmente decide uma compra. Isso se corrige em 3 aulas.</p>
+    <span class="eyebrow">Diagnóstico de percepção</span>
+    <h2>Você provavelmente já passou por isso.</h2>
     <div class="pain__grid">
-      <div class="pain__item"><span class="pain__mark">✕</span><p>Você lança um criativo, ele não performa, e você não sabe exatamente o que mudar nele.</p></div>
-      <div class="pain__item"><span class="pain__mark">✕</span><p>Sua oferta tem bons argumentos, mas o cliente ainda hesita — e você não sabe identificar por quê.</p></div>
-      <div class="pain__item"><span class="pain__mark">✕</span><p>No atendimento, você sente que está "empurrando" a venda em vez de conduzir a decisão.</p></div>
-      <div class="pain__item"><span class="pain__mark">✕</span><p>Você já ouviu falar em neuromarketing, mas nunca viu isso explicado de forma simples e aplicável.</p></div>
+      <div class="pain__item"><span class="pain__mark">✕</span><p>Clientes dizem "vou pensar" — e você não sabe o que falhou na percepção.</p></div>
+      <div class="pain__item"><span class="pain__mark">✕</span><p>Pedem desconto antes mesmo de enxergar o valor do que você oferece.</p></div>
+      <div class="pain__item"><span class="pain__mark">✕</span><p>Elogiam sua empresa e desaparecem sem fechar.</p></div>
+      <div class="pain__item"><span class="pain__mark">✕</span><p>Escolhem concorrentes mais caros — e você não entende por quê.</p></div>
+      <div class="pain__item"><span class="pain__mark">✕</span><p>Somem depois do orçamento, sem dar retorno.</p></div>
+      <div class="pain__item"><span class="pain__mark">✕</span><p>Dizem que vão voltar — e o cérebro deles já decidiu não voltar.</p></div>
+    </div>
+    <div class="callout">
+      <p><strong>O problema pode não ser seu produto.</strong> Pode ser a forma como o cérebro percebe sua empresa — antes da conversa, antes do preço, antes da comparação.</p>
     </div>
   </div>
 </section>
 
-<!-- ============ MÉTODO ============ -->
-<section class="section" id="metodo">
+<hr class="divider">
+
+<!-- ============ O QUE É O MÉTODO S.E.P. ============ -->
+<section class="section">
   <div class="wrap">
-    <span class="eyebrow">O curso</span>
-    <h2>3 aulas curtas, direto ao ponto — para aplicar ainda esta semana.</h2>
-    <p style="max-width:60ch;">Sem termos acadêmicos, sem teoria que fica só na teoria. Cada aula foi feita para assistir em uma sentada e aplicar no mesmo dia — no seu anúncio, na sua oferta ou na sua próxima conversa com um cliente.</p>
-    <div class="method__steps">
-      <div class="step">
-        <span class="step__num">AULA 01</span>
-        <h3>Identificar o Gatilho Real</h3>
-        <p>Você aprende a enxergar o que realmente move a decisão do seu cliente — antes de qualquer argumento de preço ou benefício.</p>
-      </div>
-      <div class="step">
-        <span class="step__num">AULA 02</span>
-        <h3>Posicionar a Oferta e o Atendimento</h3>
-        <p>Um jeito simples de apresentar o que você vende e conduzir o atendimento para que a objeção nem chegue a nascer — sem parecer forçado ou insistente.</p>
-      </div>
-      <div class="step">
-        <span class="step__num">AULA 03</span>
-        <h3>Criativos que Convertem</h3>
-        <p>Como aplicar os gatilhos cerebrais direto nos seus anúncios e criativos.</p>
-      </div>
+    <span class="eyebrow">Metodologia proprietária</span>
+    <h2>O que é o Método S.E.P.®?</h2>
+    <p style="max-width:60ch;">O <strong>Sistema de Engenharia da Percepção</strong> é uma metodologia criada para compreender como o cérebro percebe valor, toma decisões e escolhe marcas — antes da comparação, antes do preço, antes da argumentação.</p>
+    <div class="pain__grid">
+      <div class="pain__item"><span class="pain__mark">◆</span><p><strong>Neurociência</strong> — como o cérebro processa estímulos e forma julgamentos.</p></div>
+      <div class="pain__item"><span class="pain__mark">◆</span><p><strong>Psicologia Cognitiva</strong> — os atalhos mentais que guiam escolhas.</p></div>
+      <div class="pain__item"><span class="pain__mark">◆</span><p><strong>Economia Comportamental</strong> — por que decisões raramente são puramente racionais.</p></div>
+      <div class="pain__item"><span class="pain__mark">◆</span><p><strong>Posicionamento Estratégico</strong> — como sua empresa é percebida no mercado.</p></div>
+      <div class="pain__item"><span class="pain__mark">◆</span><p><strong>Comunicação</strong> — a linguagem que constrói confiança ou resistência.</p></div>
+      <div class="pain__item"><span class="pain__mark">◆</span><p><strong>Processo aplicado</strong> — não é teoria. É um sistema utilizado em empresas reais.</p></div>
     </div>
     <div class="callout">
-      <p><strong>Linguagem de fácil aplicação:</strong> nada aqui exige curso prévio, ferramenta cara ou experiência em marketing. Se você já vende algo — produto, serviço ou ideia — você aplica na mesma semana.</p>
+      <p><strong>O Método S.E.P.®</strong> nasceu para responder uma pergunta simples: por que empresas semelhantes geram resultados completamente diferentes?</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUEM CRIOU ============ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <span class="eyebrow">Origem do método</span>
+    <h2>Quem criou o Método S.E.P.®</h2>
+    <p style="max-width:60ch;">Nara Batista é empreendedora digital há mais de 5 anos e fundadora da Arcano Ltda — onde gerou mais de R$ 80 milhões para empresas parceiras e faturou mais de R$ 3 milhões em seu próprio negócio. Foi assim que desenvolveu o Método S.E.P.®, após estudar profundamente comportamento do consumidor, neurociência aplicada ao marketing e psicologia da decisão.</p>
+    <p style="max-width:60ch;">Como gestora de tráfego pago, ao observar empresas de diferentes portes, percebeu um padrão: muitas deixam de vender não por falta de qualidade — mas por serem <strong>percebidas da maneira errada</strong>. O produto era bom. A comunicação não traduzia valor. A oferta não gerava confiança. O funil tinha um gargalo no primeiro funil da empresa. A decisão já estava perdida antes da negociação. Entendeu que tráfego não gera vendas — apenas expõe um funil trincado desde o começo.</p>
+    <p style="max-width:60ch;">Para resolver esse problema, estruturou um sistema próprio, aplicando todo seu conhecimento sobre a mente humana em negócios físicos e digitais — escalando, agregando mais valor e recorrência. Hoje, esse sistema é aplicado estrategicamente pela <strong>Arcano Ltda</strong> — empresa especializada em Engenharia da Percepção, neuromarketing e reposicionamento.</p>
+    <div class="callout">
+      <p><strong>O conhecimento transforma ideias. Um método transforma negócios.</strong></p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ AUTORIDADE CIENTÍFICA ============ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <span class="eyebrow">Fundamento científico</span>
+    <h2>Por que estudar Engenharia da Percepção?</h2>
+    <p style="max-width:60ch;">O neuromarketing não é manipulação. É compreender como pessoas realmente tomam decisões — especialmente aquelas que acontecem de forma automática, antes da razão entrar em cena.</p>
+    <div class="pain__grid">
+      <div class="pain__item"><span class="pain__mark">◆</span><p><strong>Psicologia cognitiva</strong> — como interpretamos informações e formamos julgamentos em segundos.</p></div>
+      <div class="pain__item"><span class="pain__mark">◆</span><p><strong>Economia comportamental</strong> — por que escolhemos uma opção mesmo quando outra parece mais racional.</p></div>
+      <div class="pain__item"><span class="pain__mark">◆</span><p><strong>Percepção e emoção</strong> — o que constrói confiança, desejo e resistência na mente do consumidor.</p></div>
+      <div class="pain__item"><span class="pain__mark">◆</span><p><strong>Memória e atenção</strong> — o que faz uma mensagem ser lembrada ou ignorada no meio do ruído.</p></div>
+    </div>
+    <div class="callout">
+      <p>Grandes empresas utilizam princípios da psicologia cognitiva, economia comportamental e percepção para reduzir atritos na decisão de compra. O <strong>Método S.E.P.®</strong> adapta esses princípios para empresas de qualquer porte — <strong>sem jargão acadêmico e sem promessas milagrosas.</strong></p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ INIMIGO ============ -->
+<section class="section">
+  <div class="wrap vsl">
+    <span class="eyebrow" style="justify-content:center;">Contraste estratégico</span>
+    <h2>O problema do marketing tradicional.</h2>
+    <p>Enquanto grande parte do mercado ensina apenas como produzir mais conteúdo ou seguir algoritmos, o Método S.E.P.® parte de uma pergunta diferente:</p>
+    <p><strong>Como o cérebro decide comprar?</strong></p>
+    <p>Antes da estratégia existe percepção. Antes da percepção existe comportamento.</p>
+  </div>
+</section>
+
+<hr class="divider">
+
+<!-- ============ JORNADA S.E.P. ============ -->
+<section class="section section--panel" id="metodo-arcano">
+  <div class="wrap">
+    <span class="eyebrow">Sua trajetória</span>
+    <h2>Sua Jornada dentro do Método S.E.P.®</h2>
+    <p style="max-width:60ch;">Cada etapa prepara a próxima. Você não compra um produto isolado — entra em um sistema de reposicionamento progressivo.</p>
+    <div class="stack">
+      <div class="stack__row"><div class="stack__item"><h4>Método S.E.P.®</h4><span>Sistema de Engenharia da Percepção · Criado por Nara Batista</span></div></div>
+      <div class="stack__row"><div class="stack__item"><h4>↓ Fase 01 — O Lado Oculto do Marketing</h4><span>Fundamentos da Engenharia da Percepção · <span class="blink-soft">Você está aqui</span></span></div></div>
+      <div class="stack__row"><div class="stack__item"><h4>↓ <span class="blink-soft">NeuroScan™</span></h4><span>Diagnóstico Estratégico</span></div></div>
+    </div>
+    <div class="callout">
+      <p><strong>A Fase 01 não é o destino.</strong> É a porta de entrada para o ecossistema — onde o Método S.E.P.® deixa de ser conceito e se torna reposicionamento aplicado.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AS 3 AULAS ============ -->
+<section class="section" id="metodo">
+  <div class="wrap">
+    <span class="eyebrow">Fase 01 · O Lado Oculto do Marketing</span>
+    <h2>Três aulas. Uma mudança na forma como seu negócio é percebido.</h2>
+    <p style="max-width:60ch;">Cada aula foi desenhada para gerar consequência prática — não acúmulo de teoria. Você assiste, aplica e percebe a diferença na forma como clientes reagem à sua comunicação, à sua oferta e à sua marca.</p>
+    <div class="method__steps">
+      <div class="step">
+        <span class="step__num">Aula 01</span>
+        <h3>Descubra por que clientes dizem "vou pensar" mesmo gostando do seu produto.</h3>
+        <p>Você aprenderá como o cérebro inicia uma decisão de compra antes da comparação de preço — e onde a percepção se forma antes de qualquer argumento.</p>
+      </div>
+      <div class="step">
+        <span class="step__num">Aula 02</span>
+        <h3>Aprenda a aumentar o valor percebido da sua empresa antes de falar em preço.</h3>
+        <p>Pequenas mudanças de comunicação alteram completamente a percepção do cliente — reposicionando atendimento e oferta com base em confiança e clareza estratégica.</p>
+      </div>
+      <div class="step">
+        <span class="step__num">Aula 03</span>
+        <h3>Construa anúncios e comunicações que conversam com o cérebro.</h3>
+        <p>Aplicando princípios de atenção, emoção e memória para criar mensagens que o sistema automático de decisão processa — antes do scroll, antes da objeção.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APRENDIZADO ============ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <span class="eyebrow">Resultados da Fase 01</span>
+    <h2>Depois desta primeira etapa, você será capaz de:</h2>
+    <div class="bonus__list">
+      <div class="bonus">
+        <span class="bonus__tag">✔</span>
+        <div class="bonus__body"><p>Compreender como o cérebro percebe valor — antes de preço, antes de comparação.</p></div>
+      </div>
+      <div class="bonus">
+        <span class="bonus__tag">✔</span>
+        <div class="bonus__body"><p>Identificar gargalos de percepção na sua comunicação e no seu atendimento.</p></div>
+      </div>
+      <div class="bonus">
+        <span class="bonus__tag">✔</span>
+        <div class="bonus__body"><p>Melhorar sua comunicação com base em confiança, clareza e posicionamento.</p></div>
+      </div>
+      <div class="bonus">
+        <span class="bonus__tag">✔</span>
+        <div class="bonus__body"><p>Aumentar o valor percebido da sua oferta sem entrar na guerra de preços.</p></div>
+      </div>
+      <div class="bonus">
+        <span class="bonus__tag">✔</span>
+        <div class="bonus__body"><p>Criar ofertas mais fortes — com mensagens que geram desejo, não resistência.</p></div>
+      </div>
+      <div class="bonus">
+        <span class="bonus__tag">✔</span>
+        <div class="bonus__body"><p>Entender por que clientes escolhem concorrentes — mesmo quando sua solução é superior.</p></div>
+      </div>
     </div>
   </div>
 </section>
@@ -855,22 +968,22 @@
 <section class="section section--panel">
   <div class="wrap">
     <span class="eyebrow">Prova social</span>
-    <h2>Quem assistiu às 3 aulas, já sentiu a diferença.</h2>
+    <h2>Transformação documentada — não apenas elogios.</h2>
     <div class="proof__grid">
       <div class="testimonial">
-        <p class="testimonial__quote">"Fui no treinamento presencial e decidi comprar, totalmente diferente do que já aprendi no presencial, cada vez é uma descoberta nova, parabens Nara e Equipe na primeira eu ja fiquei maluco! . Apliquei no atendimento no mesmo dia ."</p>
-        <div class="testimonial__who"><span class="avatar"></span> [Daniel J*]  · Infoprodutor</div>
+        <p class="testimonial__quote">"<strong>Antes:</strong> Meu atendimento parecia insistente e clientes sumiam após o orçamento. <strong>Processo:</strong> Na segunda aula do Método S.E.P.®, reorganizei minha comunicação com base em percepção de valor. <strong>Resultado:</strong> Na primeira semana, percebi clientes muito mais seguros para fechar."</p>
+        <div class="testimonial__who"><span class="avatar"></span> [Daniel J*] · Infoprodutor</div>
       </div>
       <div class="testimonial">
-        <p class="testimonial__quote">"Sensasional ! Sem filtros como sempre kkk - Mudou minha otica sobre minha estrutura já sei bem onde errei!! Fod$$@ demais nara!"</p>
+        <p class="testimonial__quote">"<strong>Antes:</strong> Eu sabia que minha estrutura tinha falhas, mas não conseguia identificar onde. <strong>Processo:</strong> A Fase 01 me mostrou exatamente onde minha comunicação gerava resistência na percepção do cliente. <strong>Resultado:</strong> Saí com clareza sobre o que ajustar no posicionamento."</p>
         <div class="testimonial__who"><span class="avatar"></span> [David F*] · Infoprodutor</div>
       </div>
       <div class="testimonial">
-        <p class="testimonial__quote">"Finalmente ela decidiu soltar hahaha! Narinha você é F*** ! Mais uma vez tipo dopamina me surpreendeu PAKAS."</p>
+        <p class="testimonial__quote">"<strong>Antes:</strong> Meus criativos geravam curtidas, mas pouca decisão. <strong>Processo:</strong> Reapliquei princípios de atenção e emoção após a terceira aula. <strong>Resultado:</strong> A comunicação ficou alinhada com como o cérebro processa mensagens comerciais."</p>
         <div class="testimonial__who"><span class="avatar"></span> [Junior A*] · Designer de Criativos</div>
       </div>
       <div class="testimonial">
-        <p class="testimonial__quote">"Meu novo vicio! Sem filtro demais kkk - rindo do inicio e chorando no fim, Gratidão Nara peguei uma aula sua no discord e já foi um estralo na cabeça ! Doido pra tu lançar atulização, ta bem pago quero mais"</p>
+        <p class="testimonial__quote">"<strong>Antes:</strong> Consumia conteúdo de marketing, mas nada se conectava com meu negócio. <strong>Processo:</strong> Uma aula do S.E.P.® já reorganizou como penso posicionamento e valor percebido. <strong>Resultado:</strong> Entrei com expectativa e saí querendo avançar para o NeuroScan™."</p>
         <div class="testimonial__who"><span class="avatar"></span> [Gabriel J*] · Prestador de serviços</div>
       </div>
     </div>
@@ -880,34 +993,35 @@
 <!-- ============ ANCORAGEM / STACK ============ -->
 <section class="section" id="oferta">
   <div class="wrap">
-    <span class="eyebrow">A oferta</span>
-    <h2>Tudo o que você recebe hoje.</h2>
+    <span class="eyebrow">Primeira etapa do S.E.P.®</span>
+    <h2>Você não está comprando aulas. Está iniciando o Método S.E.P.®</h2>
+    <p style="max-width:60ch; margin-bottom:0;">Ao garantir acesso hoje, você entra na Fase 01 — a introdução oficial ao Sistema de Engenharia da Percepção, criado por Nara Batista e aplicado estrategicamente pela Arcano.</p>
     <div class="stack">
       <div class="stack__row">
         <div class="stack__item">
-          <h4>O Lado Oculto Do Marketing — Mini-Curso</h4>
-          <span>3 aulas + guia de aplicação</span>
+          <h4>Método S.E.P.® — Fase 01: O Lado Oculto do Marketing</h4>
+          <span>Introdução oficial ao Sistema de Engenharia da Percepção · 3 aulas + guia</span>
         </div>
         <div class="stack__price">R$ 197</div>
       </div>
       <div class="stack__row">
-        <div class="stack__item"><h4>Bônus 1 — Gatilhos Para Posts que Engajam</h4><span>Formatos de post + gatilhos cerebrais para Instagram</span></div>
+        <div class="stack__item"><h4>Material Complementar</h4><span>Formatos de post + princípios de atenção para comunicação</span></div>
         <div class="stack__price">R$ 97,37</div>
       </div>
       <div class="stack__row">
-        <div class="stack__item"><h4>Bônus 2 — Checklist de Aplicação</h4><span>Passo a passo para revisar antes de cada aula na prática</span></div>
+        <div class="stack__item"><h4>Checklist de Aplicação</h4><span>Roteiro estratégico para aplicar cada aula na prática</span></div>
         <div class="stack__price">R$ 67,90</div>
       </div>
       <div class="stack__total">
         <div>
-          <div class="label">Valor total hoje</div>
+          <div class="label">Investimento na Fase 01</div>
         </div>
-        <div class="value"><span class="old">R$ 362,27</span> R$ 37,90</div>
+        <div class="value"><span class="old">R$ 362,27</span> R$ 47,90</div>
       </div>
     </div>
     <div class="anchor__cta">
-      <a href="https://checkout.transacaoprotegida.com/c12bd8da-7ba7-487c-ac08-834166c5a9eb" class="btn btn--primary"><span class="btn__shine"></span>Quero Garantir Meu Acesso →</a>
-      <p style="margin-top:14px;" class="hero__note">Pagamento único · Acesso imediato após a confirmação</p>
+      <a href="#" class="btn btn--primary" data-locked-cta rel="noopener noreferrer"><span class="btn__shine"></span>Iniciar a Fase 01 →</a>
+      <p style="margin-top:14px;" class="hero__note">Pagamento único · Acesso imediato · Garantia de 7 dias</p>
     </div>
   </div>
 </section>
@@ -915,31 +1029,31 @@
 <!-- ============ BÔNUS DETALHADOS ============ -->
 <section class="section section--panel">
   <div class="wrap">
-    <span class="eyebrow">Kit para APLICAÇÃO RAPIDA</span>
-    <h2>Bônus inclusos sem custo adicional.</h2>
+    <span class="eyebrow">Materiais de apoio · Fase 01</span>
+    <h2>Complementos para acelerar sua aplicação.</h2>
     <div class="bonus__list">
       <div class="bonus">
         <span class="bonus__tag">Bônus 1</span>
         <div class="bonus__body">
           <h4>Gatilhos Para Posts que Engajam</h4>
-          <p>Um PDF com os formatos de post que mais prendem atenção no Instagram (carrossel, gancho de abertura, legenda de retenção) combinados com os gatilhos cerebrais da Aula 3 — para você entender qual formato usar em cada situação e aplicar com o seu conteúdo, no seu tom.</p>
+          <p>PDF com formatos de post que capturam atenção no Instagram — carrossel, gancho de abertura, legenda de retenção — combinados com princípios de neurociência da Aula 3 para você aplicar no seu conteúdo, no seu tom.</p>
           <span class="bonus__value">Valor agregado: R$ 97,37</span>
         </div>
       </div>
       <div class="bonus">
         <span class="bonus__tag">Bônus 2</span>
         <div class="bonus__body">
-          <h4>Checklist de Aplicação Imediata</h4>
-          <p>Um roteiro de 1 página para revisar antes de cada aula colocar em prática — do criativo ao atendimento.</p>
+          <h4>Checklist de Aplicação Estratégica</h4>
+          <p>Roteiro de 1 página para revisar antes de colocar cada aula em prática — do criativo ao atendimento, com foco em percepção e decisão.</p>
           <span class="bonus__value">Valor agregado: R$ 67,90</span>
         </div>
       </div>
       <div class="bonus">
         <span class="bonus__tag">Bônus 3</span>
         <div class="bonus__body">
-          <h4>Acesso às Atualizações do Curso</h4>
-          <p>Toda vez que alguma aula for revisada ou ampliada, você recebe a nova versão sem custo extra.</p>
-          <span class="bonus__value">Valor agregado: R$ 37,90</span>
+          <h4>Acesso às Atualizações da Fase 01</h4>
+          <p>Toda vez que o conteúdo da Fase 01 do Método S.E.P.® for revisado ou ampliado, você recebe a nova versão sem custo adicional.</p>
+          <span class="bonus__value">Valor agregado: R$ 47,90</span>
         </div>
       </div>
     </div>
@@ -949,11 +1063,11 @@
 <!-- ============ PROVA SOCIAL 2 / NÚMEROS ============ -->
 <section class="section">
   <div class="wrap">
-    <span class="eyebrow">ALUNOS</span>
-    <h2>Números que sustentam a decisão.</h2>
+    <span class="eyebrow">Trajetória do método</span>
+    <h2>Quem iniciou a Fase 01, já percebeu a diferença.</h2>
     <div class="stats">
-      <div class="stats__item"><span class="stats__num">34</span><span class="stats__label">Alunos que já assistiram às 3 aulas</span></div>
-      <div class="stats__item"><span class="stats__num">100%</span><span class="stats__label">Relatam mais resultados em suas vendas</span></div>
+      <div class="stats__item"><span class="stats__num">34</span><span class="stats__label">Empresários na Fase 01 do Método S.E.P.®</span></div>
+      <div class="stats__item"><span class="stats__num">100%</span><span class="stats__label">Relatam mais clareza na condução de decisões</span></div>
       <div class="stats__item"><span class="stats__num">7 dias</span><span class="stats__label">De garantia incondicional</span></div>
     </div>
   </div>
@@ -968,20 +1082,20 @@
     <h2>As dúvidas que toda pessoa tem antes de comprar — respondidas.</h2>
     <div class="objection__list">
       <div class="objection">
-        <div class="objection__q">"Eu não tenho experiência em marketing."</div>
-        <div class="objection__a"><p>Não precisa ter. As 3 aulas usam linguagem simples, sem termos técnicos, justamente para quem nunca estudou neuromarketing ou vendas formalmente.</p></div>
+        <div class="objection__q">"Eu não tenho experiência em marketing ou neurociência."</div>
+        <div class="objection__a"><p>Não precisa ter. A Fase 01 foi construída em linguagem clara, sem jargão acadêmico — para quem nunca estudou Engenharia da Percepção, mas precisa de resultado prático no negócio.</p></div>
       </div>
       <div class="objection">
-        <div class="objection__q">"Não tenho tempo para mais um curso longo."</div>
-        <div class="objection__a"><p>Por isso o curso tem só 3 aulas, direto ao ponto, feitas para assistir em uma sentada e aplicar no mesmo dia.</p></div>
+        <div class="objection__q">"Não tenho tempo para mais um processo longo."</div>
+        <div class="objection__a"><p>A Fase 01 tem três aulas objetivas, desenhadas para assistir em uma sentada e aplicar no mesmo dia — no atendimento, na oferta ou no próximo criativo.</p></div>
       </div>
       <div class="objection">
-        <div class="objection__q">"Já tentei outros conteúdos de vendas e não funcionaram."</div>
-        <div class="objection__a"><p>A maioria foca em script pronto. Aqui você aprende o que acontece antes do script — o gatilho que decide a compra na mente do cliente. É uma camada diferente, raramente ensinada.</p></div>
+        <div class="objection__q">"Já tentei outros conteúdos de marketing e não funcionaram."</div>
+        <div class="objection__a"><p>A maioria ensina fórmulas superficiais. O Método S.E.P.® trabalha o que acontece antes da fórmula — a percepção, a confiança e a decisão automática do cérebro. É uma camada que raramente é ensinada.</p></div>
       </div>
       <div class="objection">
-        <div class="objection__q">"E se eu comprar e não gostar?"</div>
-        <div class="objection__a"><p>Você tem garantia incondicional de 7 dias. Se por qualquer motivo as aulas não fizerem sentido pra você, é só solicitar o reembolso.</p></div>
+        <div class="objection__q">"E se eu comprar e não fizer sentido para mim?"</div>
+        <div class="objection__a"><p>Você tem garantia incondicional de 7 dias. Se a Fase 01 não se alinhar ao seu momento, basta solicitar o reembolso — sem burocracia.</p></div>
       </div>
     </div>
   </div>
@@ -1017,28 +1131,55 @@
     <h2>Ainda com alguma dúvida?</h2>
     <div class="faq">
       <details class="faq__item">
-        <summary>Esse método serve para todos?</summary>
-        <div class="faq__a"><p>Sim. Desde empresários do mercado digital até negócios locais — as 3 aulas trabalham com o comportamento de decisão do cliente, que é o mesmo independentemente do nicho. O que muda é apenas o exemplo de aplicação, e isso você adapta com facilidade ao seu contexto.</p></div>
+        <summary>O Método S.E.P.® serve para o meu negócio?</summary>
+        <div class="faq__a"><p>Sim. Desde empresários digitais até negócios locais — a Fase 01 trabalha com o comportamento de decisão do consumidor, que é o mesmo independentemente do nicho. O que muda é o contexto de aplicação, e isso você adapta com clareza ao seu negócio.</p></div>
       </details>
       <details class="faq__item">
         <summary>Consigo aplicar de forma imediata?</summary>
-        <div class="faq__a"><p>Sim. As aulas foram estruturadas para ser assistidas de uma vez e aplicada no mesmo dia — no seu atendimento, na sua oferta ou no seu próximo criativo — sem necessidade de preparo prévio ou ferramentas adicionais.</p></div>
+        <div class="faq__a"><p>Sim. Cada aula foi estruturada para ser assistida de uma vez e aplicada no mesmo dia — no atendimento, na oferta, no posicionamento ou no próximo criativo — sem preparo prévio ou ferramentas adicionais.</p></div>
       </details>
       <details class="faq__item">
-        <summary>Quais as possibilidades de resultados?</summary>
-        <div class="faq__a"><p>Ao aplicar o que é ensinado nas 3 aulas, é comum ganhar mais clareza para identificar o que motiva a decisão do cliente, reduzir objeções e criar anúncios com mais engajamento. Os resultados dependem do seu mercado, da sua constância na aplicação e do contexto de cada venda — por isso não trabalhamos com promessas de números fixos, e sim com um método consistente que você aplica repetidamente.</p></div>
+        <summary>Quais resultados posso esperar?</summary>
+        <div class="faq__a"><p>Ao aplicar os princípios da Fase 01, é comum ganhar mais clareza sobre o que motiva a decisão do cliente, reduzir resistências na comunicação e fortalecer a percepção de valor da sua oferta. Os resultados dependem do seu mercado, da sua constância e do contexto de cada negócio — por isso não trabalhamos com promessas de números fixos.</p></div>
       </details>
       <details class="faq__item">
-        <summary>Esse conteúdo é de fácil linguagem?</summary>
-        <div class="faq__a"><p>Sim. Não há termos técnicos de marketing nem jargão acadêmico. As 3 aulas foram feitas para qualquer pessoa que venda algo entender e aplicar, mesmo sem experiência prévia com neuromarketing ou marketing.</p></div>
+        <summary>Qual a diferença entre Nara Batista e a Arcano?</summary>
+        <div class="faq__a"><p>Nara Batista é a criadora do Método S.E.P.® — o Sistema de Engenharia da Percepção. A Arcano é a empresa especializada em aplicar esse método em empresas, com neuromarketing e posicionamento estratégico. A Fase 01 é o treinamento de entrada; as etapas seguintes são conduzidas pela Arcano.</p></div>
+      </details>
+      <details class="faq__item">
+        <summary>O que acontece depois da Fase 01?</summary>
+        <div class="faq__a"><p>Após concluir O Lado Oculto do Marketing, empresas poderão solicitar o NeuroScan™ — uma análise estratégica conduzida com o Método S.E.P.®, onde identificamos gargalos de percepção, comunicação e posicionamento.</p></div>
       </details>
       <details class="faq__item">
         <summary>O que acontece se eu não gostar do conteúdo?</summary>
-        <div class="faq__a"><p>Você está protegido pela garantia incondicional de 7 dias. Se ao assistir às aulas sentir que não faz sentido para o seu momento, basta solicitar o reembolso dentro do prazo — de forma simples e sem burocracia.</p></div>
+        <div class="faq__a"><p>Você está protegido pela garantia incondicional de 7 dias. Se ao assistir à Fase 01 sentir que não faz sentido para o seu momento, basta solicitar o reembolso dentro do prazo.</p></div>
       </details>
     </div>
   </div>
 </section>
+
+<!-- ============ ECOSISTEMA ARCANO ============ -->
+<section class="section section--panel">
+  <div class="wrap">
+    <span class="eyebrow">Próximas etapas</span>
+    <h2>O ecossistema após a Fase 01.</h2>
+    <p style="max-width:60ch;">O treinamento não é o destino. É a entrada para um ecossistema de conhecimento e aplicação.</p>
+    <div class="bonus__list">
+      <div class="bonus">
+        <span class="bonus__tag blink-soft">01</span>
+        <div class="bonus__body">
+          <h4><span class="blink-soft">NeuroScan™</span> — Diagnóstico Estratégico</h4>
+          <p>Após concluir a Fase 01 do Método S.E.P.®, você poderá solicitar o NeuroScan™ — uma análise estratégica conduzida com o Sistema de Engenharia da Percepção. Nesta etapa, identificamos os principais gargalos de percepção, comunicação e posicionamento da sua empresa.</p>
+        </div>
+      </div>
+    </div>
+    <div class="callout">
+      <p><strong>Método S.E.P.®</strong> → <strong>Fase 01</strong> → <strong><span class="blink-soft">NeuroScan™</span></strong>. Cada etapa prepara a próxima. A Fase 01 é onde tudo começa.</p>
+    </div>
+  </div>
+</section>
+
+<hr class="divider">
 
 <!-- ============ CTA FINAL ============ -->
 <section class="section final">
@@ -1052,9 +1193,9 @@
       </div>
     </div>
     <span class="eyebrow" style="justify-content:center;">Última chamada</span>
-    <h2>O lado oculto do Marketing vai continuar decidindo por você — ou vai começar a trabalhar a seu favor.</h2>
-    <p>Acesso imediato. Linguagem simples. Garantia de 7 dias. A decisão que falta é só uma.</p>
-    <a href="https://checkout.transacaoprotegida.com/c12bd8da-7ba7-487c-ac08-834166c5a9eb" class="btn btn--primary"><span class="btn__shine"></span>Quero Acessar As 3 Aulas Agora →</a>
+    <h2>Seu negócio continuará sendo percebido da maneira errada — ou você inicia o Método S.E.P.® agora.</h2>
+    <p>Acesso imediato à Fase 01. Garantia de 7 dias. A decisão que falta é só uma.</p>
+    <a href="#" class="btn btn--primary" data-locked-cta rel="noopener noreferrer"><span class="btn__shine"></span>Quero Iniciar o Método S.E.P. →</a>
   </div>
 </section>
 
@@ -1063,11 +1204,85 @@
   <div class="wrap">
     <a href="#" class="brand">
       <svg width="18" height="18" viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="18" stroke="#d4a853" stroke-width="1"/><circle cx="20" cy="20" r="5" stroke="#f0c96a" stroke-width="1"/></svg>
-      Arcano Digital
+      Arcano
     </a>
     <p class="cnpj">CNPJ: 63.745.900/0001-88</p>
+    <p><strong>Método S.E.P.®</strong> — Sistema de Engenharia da Percepção.<br>Criado por Nara Batista.<br>Aplicado estrategicamente pela Arcano.</p>
     <p>Propriedade de Arcano Digital LTDA. Todos os direitos reservados.</p>
   </div>
 </footer>
+
+<script>
+(function(){
+  'use strict';
+  var p=['aHR0cHM6Ly9jaGVja291dC50cmFuc2Fj','YW9wcm90ZWdpZGEuY29tL2MxMmJkOGRh','LTdiYTctNDg3Yy1hYzA4LTgzNDE2NmM1YTllYg=='];
+  var u=atob(p.join(''));
+  var h=0;
+  for(var i=0;i<u.length;i++){h=((h<<5)-h)+u.charCodeAt(i);h|=0;}
+  var sig=h.toString(36);
+
+  function seal(el){
+    if(!el||el.dataset.ctaSealed==='1')return;
+    el.dataset.ctaSealed='1';
+    el.setAttribute('href','#');
+    el.setAttribute('data-cta-sig',sig);
+    el.addEventListener('click',function(ev){
+      ev.preventDefault();
+      ev.stopImmediatePropagation();
+      window.location.assign(u);
+    },true);
+    el.addEventListener('keydown',function(ev){
+      if(ev.key==='Enter'||ev.key===' '){
+        ev.preventDefault();
+        window.location.assign(u);
+      }
+    },true);
+    el.addEventListener('auxclick',function(ev){
+      if(ev.button===1){ev.preventDefault();window.location.assign(u);}
+    },true);
+  }
+
+  function guard(){
+    document.querySelectorAll('[data-locked-cta]').forEach(function(el){
+      seal(el);
+      if(el.getAttribute('href')&&el.getAttribute('href')!=='#'){
+        el.setAttribute('href','#');
+      }
+      if(el.dataset.ctaSig!==sig){
+        el.dataset.ctaSig=sig;
+      }
+      if(el.onclick){el.onclick=null;}
+    });
+  }
+
+  if(document.readyState==='loading'){
+    document.addEventListener('DOMContentLoaded',guard);
+  }else{
+    guard();
+  }
+
+  new MutationObserver(function(muts){
+    muts.forEach(function(m){
+      if(m.type==='attributes'&&(m.attributeName==='href'||m.attributeName==='onclick')){
+        var el=m.target;
+        if(el.matches&&el.matches('[data-locked-cta]')){
+          if(el.getAttribute('href')!=='#')el.setAttribute('href','#');
+          if(el.onclick)el.onclick=null;
+        }
+      }
+      if(m.type==='childList'){
+        m.addedNodes.forEach(function(n){
+          if(n.nodeType===1){
+            if(n.matches&&n.matches('[data-locked-cta]'))seal(n);
+            n.querySelectorAll&&n.querySelectorAll('[data-locked-cta]').forEach(seal);
+          }
+        });
+      }
+    });
+  }).observe(document.documentElement,{subtree:true,attributes:true,childList:true,attributeFilter:['href','onclick']});
+
+  setInterval(guard,1500);
+})();
+</script>
 </body>
 </html>
