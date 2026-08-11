@@ -296,23 +296,6 @@
   .lesson h3{font-size:18px;}
   .lesson p{margin:0;font-size:14px;}
 
-  /* PRODUCT BLOCK */
-  .product-block{
-    background:var(--card);border-radius:var(--radius);
-    padding:28px;border:1px solid var(--line);
-    border-left:4px solid var(--tan);
-    box-shadow:var(--shadow);
-  }
-  .product-block__list{list-style:none;margin:16px 0 20px;}
-  .product-block__list li{
-    font-size:14px;padding:7px 0 7px 22px;position:relative;color:var(--navy-soft);
-    border-bottom:1px solid var(--line);
-  }
-  .product-block__list li:last-child{border:none;}
-  .product-block__list li::before{
-    content:"◆";position:absolute;left:0;color:var(--gold);font-size:9px;top:11px;
-  }
-
   /* COMBO */
   .combo{
     background:linear-gradient(135deg,var(--navy) 0%,#1a3050 50%,#0d1f3c 100%);
@@ -565,10 +548,15 @@
           <p style="font-size:14px;margin-bottom:0;">Comunidade no WhatsApp e Discord com aulas semanais, análise de negócios e funis de vendas.</p>
           <ul class="offer__list">
             <li>Aulas semanais ao vivo</li>
-            <li>Análise de funis e negócios</li>
-            <li>Neuromarketing aplicado</li>
-            <li>Estudos de caso práticos</li>
-            <li>Troca entre empresários</li>
+            <li>Estratégias de neuromarketing aplicadas a negócios</li>
+            <li>Comportamento e tomada de decisão do consumidor</li>
+            <li>Engenharia da percepção e valor percebido</li>
+            <li>Gatilhos e mecanismos de decisão</li>
+            <li>Posicionamento e diferenciação</li>
+            <li>Análise de ofertas, páginas e conteúdos</li>
+            <li>Funis construídos a partir do comportamento do consumidor</li>
+            <li>Estudos de casos e análises práticas</li>
+            <li>Troca de experiências entre empresários e estrategistas</li>
           </ul>
           <div class="offer__price">
             <span class="old">De R$ 97,00</span>
@@ -579,35 +567,6 @@
           <p class="btn-trust">🔒 Pagamento seguro · Acesso imediato</p>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<!-- NEURO BUSINESS -->
-<section class="section">
-  <div class="wrap">
-    <p class="label">🧠 Neuro Business · 🚀</p>
-    <h2>Dentro da comunidade você encontra:</h2>
-    <p class="lead">Estratégia contínua no WhatsApp e Discord — aulas semanais e análise prática de negócios e funis.</p>
-
-    <div class="product-block">
-      <ul class="product-block__list">
-        <li>Estratégias de neuromarketing aplicadas a negócios</li>
-        <li>Comportamento e tomada de decisão do consumidor</li>
-        <li>Engenharia da percepção e valor percebido</li>
-        <li>Gatilhos e mecanismos de decisão</li>
-        <li>Posicionamento e diferenciação</li>
-        <li>Análise de ofertas, páginas e conteúdos</li>
-        <li>Funis construídos a partir do comportamento do consumidor</li>
-        <li>Estudos de casos e análises práticas</li>
-        <li>Troca de experiências entre empresários e estrategistas</li>
-      </ul>
-      <div class="offer__price" style="margin-bottom:16px;">
-        <span class="old">De R$ 97,00</span>
-        <span class="now">R$ 37,90</span>
-        <span class="note">Assinatura mensal · WhatsApp + Discord</span>
-      </div>
-      <a href="#" class="btn btn--navy" data-locked-cta data-checkout="neuro" rel="noopener noreferrer">Entrar na Neuro Business →</a>
     </div>
   </div>
 </section>
@@ -827,7 +786,7 @@
   },{passive:true});
 
   var targets=document.querySelectorAll(
-    '.section > .wrap, .bridge .wrap, .pain-card, .stat, .offer, .lesson, .step-card, .combo, .guarantee, .product-block, .lessons-block'
+    '.section > .wrap, .bridge .wrap, .pain-card, .stat, .offer, .lesson, .step-card, .combo, .guarantee, .lessons-block'
   );
   targets.forEach(function(el,i){
     el.classList.add('reveal');
