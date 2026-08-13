@@ -6,6 +6,7 @@
 <title>Método S.E.P.® + Neuro Business | Nara Batista</title>
 <meta name="description" content="Fase 01 do Método S.E.P.® por R$ 19,90, comunidade Neuro Business por R$ 37,90 ou pacote completo por R$ 47,96. Neuromarketing e Engenharia da Percepção.">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<meta name="facebook-domain-verification" content="wbiuxz7oxg2mt2swczx4322gkbecf1" />
 <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline' 'self'; style-src 'unsafe-inline' 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -646,25 +647,26 @@
   var stores={
     fase01:{
       p:['aHR0cHM6Ly9wYXkuY2FrdG8u','Y29tLmJyL2Z1YXVidHhf','MTAyMjMzMw=='],
-      k:'fuaubtx_1022333'
+      v:'YWNnYjZw'
     },
     neuro:{
       p:['aHR0cHM6Ly9wYXkuY2FrdG8u','Y29tLmJyLzNlZXVueWp5Xz','EwMzQzNjA='],
-      k:'3eeunjy_1034360'
+      v:'LTk2OG52Mg=='
     },
     bundle:{
       p:['aHR0cHM6Ly9wYXkuY2FrdG8u','Y29tLmJyLzh4a2VkeWFf','MTAzNDQyOQ=='],
-      k:'8xkedya_1034429'
+      v:'NnRzaml2'
     }
   };
   var urls={},sigs={};
   Object.keys(stores).forEach(function(id){
     var s=stores[id],u=atob(s.p.join(''));
-    if(u.indexOf(s.k)===-1)return;
-    urls[id]=u;
     var h=0;
     for(var i=0;i<u.length;i++){h=((h<<5)-h)+u.charCodeAt(i);h|=0;}
-    sigs[id]=h.toString(36);
+    var sig=h.toString(36);
+    if(sig!==atob(s.v))return;
+    urls[id]=u;
+    sigs[id]=sig;
   });
 
   function go(el){
