@@ -1,815 +1,414 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Método S.E.P.® + Neuro Business | Nara Batista</title>
-<meta name="description" content="Fase 01 do Método S.E.P.® por R$ 19,90, comunidade Neuro Business por R$ 37,90 ou pacote completo por R$ 47,96. Neuromarketing e Engenharia da Percepção.">
-<meta name="referrer" content="strict-origin-when-cross-origin">
-<meta name="facebook-domain-verification" content="wbiuxz7oxg2mt2swczx4322gkbecf1" />
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'unsafe-inline' 'self'; style-src 'unsafe-inline' 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'; upgrade-insecure-requests">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-<style>
-  :root{
-    --bg:#FAF8F4;
-    --bg-warm:#F3EDE4;
-    --card:#FFFFFF;
-    --navy:#0E1C36;
-    --navy-soft:#2A3F5F;
-    --ink:#3D4F66;
-    --tan:#C9A882;
-    --tan-light:#E8D5C0;
-    --gold:#B8956C;
-    --green:#1A8F4A;
-    --green-bright:#24C45E;
-    --green-glow:rgba(36,196,94,0.35);
-    --red-soft:#C44D62;
-    --line:rgba(201,168,130,0.35);
-    --shadow:0 8px 32px rgba(14,28,54,0.08);
-    --shadow-lg:0 16px 48px rgba(14,28,54,0.12);
-    --radius:16px;
-    --radius-sm:12px;
-    --display:'Cormorant Garamond', Georgia, serif;
-    --body:'Plus Jakarta Sans', system-ui, sans-serif;
-  }
-  *{box-sizing:border-box;margin:0;padding:0;}
-  html{scroll-behavior:smooth;}
-  body{
-    background:var(--bg);
-    color:var(--ink);
-    font-family:var(--body);
-    line-height:1.7;
-    -webkit-font-smoothing:antialiased;
-    overflow-x:hidden;
-  }
-  img,svg{display:block;max-width:100%;}
-  .wrap{max-width:720px;margin:0 auto;padding:0 20px;}
-  .wrap--wide{max-width:960px;}
-
-  /* NAV */
-  .nav{
-    position:sticky;top:0;z-index:100;
-    background:rgba(250,248,244,0.85);
-    backdrop-filter:blur(16px);
-    -webkit-backdrop-filter:blur(16px);
-    border-bottom:1px solid transparent;
-    padding:14px 0;
-    transition:box-shadow .35s ease, border-color .35s ease, background .35s ease;
-  }
-  .nav.is-scrolled{
-    background:rgba(250,248,244,0.96);
-    border-bottom-color:var(--line);
-    box-shadow:0 4px 24px rgba(14,28,54,0.08);
-  }
-  .nav__inner{
-    max-width:960px;margin:0 auto;padding:0 20px;
-    display:flex;align-items:center;justify-content:space-between;gap:12px;
-  }
-  .brand{
-    font-family:var(--display);
-    font-size:15px;font-weight:600;
-    letter-spacing:.12em;text-transform:uppercase;
-    color:var(--navy);
-  }
-  .nav__actions{display:flex;align-items:center;gap:10px;}
-  .btn-ig{
-    display:inline-flex;align-items:center;gap:6px;
-    padding:10px 16px;border-radius:999px;
-    border:1.5px solid var(--tan);
-    background:var(--card);
-    color:var(--navy);
-    font-size:12px;font-weight:600;
-    text-decoration:none;
-    position:relative;overflow:hidden;z-index:1;
-    transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease, color .25s ease;
-  }
-  .btn-ig::before{
-    content:"";
-    position:absolute;inset:0;z-index:-1;
-    background:linear-gradient(135deg,#f09433,#e6683c,#dc2743,#cc2366,#bc1888);
-    opacity:0;
-    transition:opacity .3s ease;
-  }
-  .btn-ig:hover{
-    transform:translateY(-2px);
-    border-color:transparent;
-    color:#fff;
-    box-shadow:0 8px 24px rgba(220,39,67,0.3);
-  }
-  .btn-ig:hover::before{opacity:1;}
-  .btn-ig:active{transform:translateY(0) scale(.98);}
-  .btn-ig svg{width:16px;height:16px;transition:transform .25s ease;}
-  .btn-ig:hover svg{transform:scale(1.1);}
-
-  /* TYPOGRAPHY */
-  .label{
-    font-size:11px;font-weight:700;
-    letter-spacing:.18em;text-transform:uppercase;
-    color:var(--gold);margin-bottom:10px;
-  }
-  h1,h2,h3{
-    font-family:var(--display);
-    color:var(--navy);
-    font-weight:600;
-    line-height:1.15;
-  }
-  h1{font-size:clamp(32px,6vw,48px);margin-bottom:16px;}
-  h1 em{font-style:italic;color:var(--gold);}
-  h2{font-size:clamp(26px,4.5vw,36px);margin-bottom:14px;}
-  h3{font-size:20px;margin-bottom:8px;}
-  p{margin-bottom:14px;}
-  .lead{font-size:17px;color:var(--navy-soft);max-width:58ch;}
-  .center{text-align:center;}
-  .section{padding:56px 0;}
-  .section--warm{background:var(--bg-warm);}
-
-  /* STATS */
-  .stats-row{
-    display:grid;grid-template-columns:repeat(3,1fr);gap:12px;
-    margin:28px 0;
-  }
-  .stat{
-    background:var(--card);border-radius:var(--radius-sm);
-    padding:18px 12px;text-align:center;
-    border:1px solid var(--line);
-    box-shadow:var(--shadow);
-    transition:transform .3s ease, box-shadow .3s ease;
-  }
-  .stat:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);}
-  .stat__num{
-    display:block;font-family:var(--display);
-    font-size:28px;font-weight:700;color:var(--navy);
-  }
-  .stat__num--gold{color:var(--gold);}
-  .stat__label{font-size:10px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--ink);line-height:1.4;}
-
-  /* PAIN CARDS */
-  .pain-card{
-    background:var(--card);
-    border-radius:var(--radius);
-    padding:24px 24px 24px 28px;
-    margin-bottom:14px;
-    border:1px solid var(--line);
-    border-left:4px solid var(--tan);
-    box-shadow:var(--shadow);
-    transition:transform .3s ease, box-shadow .3s ease, border-left-color .3s ease;
-  }
-  .pain-card:hover{
-    transform:translateX(4px);
-    box-shadow:var(--shadow-lg);
-    border-left-color:var(--gold);
-  }
-  .pain-card__icon{font-size:28px;margin-bottom:10px;}
-  .pain-card h3{font-size:19px;}
-  .pain-card p{margin:0;font-size:15px;color:var(--ink);}
-
-  /* BRIDGE */
-  .bridge{
-    text-align:center;padding:40px 0;
-  }
-  .bridge h2{font-size:clamp(22px,4vw,30px);}
-  .bridge strong{color:#2563EB;}
-
-  /* OFFER CARDS */
-  .offers{display:grid;gap:20px;margin-top:32px;}
-  @media(min-width:768px){.offers{grid-template-columns:1fr 1fr;}}
-  .offers--stack{display:flex;flex-direction:column;gap:20px;}
-  .lessons-block{
-    background:var(--bg-warm);border-radius:var(--radius);
-    padding:28px 24px;border:1px solid var(--line);
-  }
-  .offers--single{max-width:520px;margin-left:auto;margin-right:auto;}
-  .offer{
-    background:var(--card);
-    border-radius:var(--radius);
-    border:2px solid var(--line);
-    overflow:hidden;
-    box-shadow:var(--shadow-lg);
-    display:flex;flex-direction:column;
-    transition:transform .35s ease, box-shadow .35s ease, border-color .35s ease;
-  }
-  .offer:hover{transform:translateY(-6px);box-shadow:0 20px 56px rgba(14,28,54,0.14);}
-  .offer--featured:hover{border-color:var(--green);}
-  .offer--featured{border-color:var(--navy);}
-  .offer__badge{
-    background:var(--navy);color:#fff;
-    text-align:center;padding:10px;
-    font-size:10px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-  }
-  .offer__badge--green{background:var(--green);}
-  .offer__body{padding:24px;flex:1;display:flex;flex-direction:column;}
-  .offer__tag{font-size:22px;margin-bottom:8px;}
-  .offer__price{margin:16px 0;}
-  .offer__price .old{
-    display:block;font-size:14px;color:var(--ink);
-    text-decoration:line-through;opacity:.7;
-  }
-  .offer__price .now{
-    font-family:var(--display);
-    font-size:42px;font-weight:700;color:var(--green);
-    line-height:1;
-  }
-  .offer__price .note{font-size:12px;color:var(--ink);margin-top:4px;}
-  .offer__list{list-style:none;margin:12px 0 20px;flex:1;}
-  .offer__list li{
-    font-size:13px;padding:6px 0 6px 20px;
-    position:relative;color:var(--navy-soft);
-  }
-  .offer__list li::before{
-    content:"✓";position:absolute;left:0;
-    color:var(--green);font-weight:700;
-  }
-  .urgency{
-    background:#FFF0F0;border:1px solid #FECACA;
-    border-radius:var(--radius-sm);
-    padding:10px 14px;font-size:12px;
-    color:var(--red-soft);font-weight:600;
-    text-align:center;margin-bottom:14px;
-  }
-
-  /* CTA BUTTONS */
-  .btn{
-    display:block;width:100%;
-    padding:16px 24px;border:none;border-radius:999px;
-    font-family:var(--body);
-    font-size:13px;font-weight:700;
-    letter-spacing:.06em;text-transform:uppercase;
-    text-align:center;text-decoration:none;
-    cursor:pointer;
-    position:relative;overflow:hidden;z-index:1;
-    transition:transform .25s cubic-bezier(.34,1.56,.64,1), box-shadow .25s ease;
-  }
-  .btn::after{
-    content:"";
-    position:absolute;top:0;left:-120%;
-    width:60%;height:100%;
-    background:linear-gradient(90deg,transparent,rgba(255,255,255,.35),transparent);
-    transform:skewX(-18deg);
-    transition:none;
-    pointer-events:none;
-  }
-  .btn:hover::after{animation:btn-shine .7s ease;}
-  .btn:active{transform:translateY(1px) scale(.98);}
-  .btn--green{
-    background:linear-gradient(135deg,#2ed96a 0%,var(--green-bright) 50%,#1fa84e 100%);
-    color:#fff;
-    box-shadow:0 8px 28px var(--green-glow);
-    animation:btn-pulse 2.8s ease-in-out infinite;
-  }
-  .btn--green:hover{
-    transform:translateY(-3px) scale(1.02);
-    box-shadow:0 14px 40px rgba(36,196,94,0.45);
-    animation:none;
-  }
-  .btn--navy{
-    background:linear-gradient(135deg,#1a3050 0%,var(--navy) 100%);
-    color:#fff;
-    box-shadow:0 8px 24px rgba(14,28,54,0.25);
-  }
-  .btn--navy:hover{
-    transform:translateY(-3px) scale(1.02);
-    box-shadow:0 14px 36px rgba(14,28,54,0.35);
-  }
-  .btn:focus-visible{outline:2px solid var(--gold);outline-offset:3px;}
-  .btn-trust{font-size:11px;color:var(--ink);text-align:center;margin-top:10px;opacity:.8;}
-
-  /* LESSON CARDS */
-  .lesson{
-    display:grid;grid-template-columns:48px 1fr;gap:16px;
-    background:var(--card);border-radius:var(--radius);
-    padding:22px;margin-bottom:14px;
-    border:1px solid var(--line);
-    border-left:4px solid var(--tan);
-    box-shadow:var(--shadow);
-    transition:transform .3s ease, box-shadow .3s ease;
-  }
-  .lesson:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);}
-  .lesson__num{
-    width:48px;height:48px;border-radius:var(--radius-sm);
-    background:var(--tan-light);
-    display:flex;align-items:center;justify-content:center;
-    font-family:var(--display);font-size:22px;font-weight:700;color:var(--navy);
-    transition:background .3s ease, transform .3s ease;
-  }
-  .lesson:hover .lesson__num{background:var(--tan);transform:scale(1.05);}
-  .lesson h3{font-size:18px;}
-  .lesson p{margin:0;font-size:14px;}
-
-  /* COMBO */
-  .combo{
-    background:linear-gradient(135deg,var(--navy) 0%,#1a3050 50%,#0d1f3c 100%);
-    border-radius:var(--radius);padding:32px 28px;
-    color:#fff;text-align:center;
-    box-shadow:var(--shadow-lg);
-    position:relative;overflow:hidden;
-    transition:transform .35s ease, box-shadow .35s ease;
-  }
-  .combo::before{
-    content:"";
-    position:absolute;top:-50%;left:-50%;
-    width:200%;height:200%;
-    background:radial-gradient(circle,rgba(36,196,94,0.08) 0%,transparent 60%);
-    animation:combo-glow 4s ease-in-out infinite;
-    pointer-events:none;
-  }
-  .combo:hover{transform:translateY(-4px);box-shadow:0 24px 64px rgba(14,28,54,0.25);}
-  .combo .label{color:var(--tan);}
-  .combo h2{color:#fff;margin-bottom:10px;}
-  .combo p{color:rgba(255,255,255,.8);}
-  .combo__price{
-    font-family:var(--display);font-size:52px;font-weight:700;
-    color:var(--green-bright);line-height:1;margin:16px 0 6px;
-  }
-  .combo__save{
-    display:inline-block;background:rgba(36,196,94,.15);
-    border:1px solid var(--green-bright);border-radius:999px;
-    padding:6px 14px;font-size:12px;font-weight:700;
-    color:var(--green-bright);margin-bottom:20px;
-    animation:badge-pulse 2s ease-in-out infinite;
-  }
-
-  /* STEPS */
-  .step-card{
-    background:var(--card);border-radius:var(--radius);
-    padding:24px;text-align:center;margin-bottom:14px;
-    border:1px solid var(--line);box-shadow:var(--shadow);
-    transition:transform .3s ease, box-shadow .3s ease;
-  }
-  .step-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lg);}
-  .step-card--final{
-    background:linear-gradient(135deg,#E8F5EE,#D4EDDA);
-    border-color:var(--green);
-  }
-  .step-card__icon{font-size:32px;margin-bottom:10px;}
-  .step-card h3{font-size:18px;}
-
-  /* GUARANTEE */
-  .guarantee{
-    background:var(--card);border-radius:var(--radius);
-    padding:28px;text-align:center;
-    border:2px solid var(--tan-light);
-    box-shadow:var(--shadow);
-  }
-  .guarantee h3{margin-bottom:8px;}
-  .guarantee p{margin:0;font-size:14px;}
-
-  /* FOOTER */
-  footer{
-    padding:40px 0 32px;text-align:center;
-    border-top:1px solid var(--line);
-    font-size:12px;color:var(--ink);
-  }
-  footer p{margin-bottom:6px;}
-
-  /* REVEAL ANIMATIONS */
-  .reveal{
-    opacity:0;
-    transform:translateY(28px);
-    transition:opacity .7s cubic-bezier(.22,1,.36,1), transform .7s cubic-bezier(.22,1,.36,1);
-  }
-  .reveal.is-visible{
-    opacity:1;
-    transform:translateY(0);
-  }
-  .reveal--delay-1{transition-delay:.1s;}
-  .reveal--delay-2{transition-delay:.2s;}
-  .reveal--delay-3{transition-delay:.3s;}
-
-  @keyframes btn-pulse{
-    0%,100%{box-shadow:0 8px 28px var(--green-glow);}
-    50%{box-shadow:0 8px 36px rgba(36,196,94,0.55);}
-  }
-  @keyframes btn-shine{
-    0%{left:-120%;}
-    100%{left:150%;}
-  }
-  @keyframes combo-glow{
-    0%,100%{opacity:.6;transform:translate(0,0);}
-    50%{opacity:1;transform:translate(2%,2%);}
-  }
-  @keyframes badge-pulse{
-    0%,100%{transform:scale(1);}
-    50%{transform:scale(1.04);}
-  }
-
-  @media(max-width:520px){
-    .stats-row{grid-template-columns:1fr;}
-    .stat{padding:14px;}
-  }
-  @media(prefers-reduced-motion:reduce){
-    html{scroll-behavior:auto;}
-    .btn,.btn--green,.stat,.pain-card,.offer,.lesson,.step-card,.combo,.btn-ig{transition:none;animation:none;}
-    .reveal{opacity:1;transform:none;transition:none;}
-    .combo::before{animation:none;}
-    .combo__save{animation:none;}
-  }
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teste IPTV Grátis | UniTV Brasil — IPTV Premium Estável em HD, Full HD e 4K</title>
+  <meta name="description" content="UniTV Brasil entrega canais ao vivo, filmes, séries e esportes com estabilidade real, qualidade 4K e suporte especializado. Peça seu teste IPTV grátis agora.">
+  <link rel="icon" href="images/logo.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+  <div class="topbar">ACESSO VITALÍCIO · <span>4K</span> · SUPORTE 24/7</div>
 
-<nav class="nav">
-  <div class="nav__inner">
-    <span class="brand">Nara Batista</span>
-    <div class="nav__actions">
-      <a href="https://www.instagram.com/eusounarah_rubia?igsh=ODJ2czZnazk1aGlk&utm_source=qr" class="btn-ig allow-link" target="_blank" rel="noopener noreferrer" aria-label="Instagram de Nara Batista">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/></svg>
-        Instagram
+  <header class="site-header">
+    <nav class="nav" aria-label="Principal">
+      <a href="index.html" class="brand" aria-current="page">
+        <img src="images/logo.svg" alt="" class="brand-mark" width="42" height="38">
+        <span class="brand-text">
+          <strong>Uni<em>TV</em></strong>
+          <small>BRASIL</small>
+        </span>
       </a>
-    </div>
-  </div>
-</nav>
-
-<!-- HERO -->
-<header class="section center">
-  <div class="wrap">
-    <p class="label">Método S.E.P.® · Engenharia da Percepção</p>
-    <h1>O problema da sua empresa talvez não seja preço.<br>É como o <em>cérebro</em> percebe seu negócio.</h1>
-    <p class="lead" style="margin:0 auto;">Criado por Nara Batista — referência em neuromarketing e reposicionamento estratégico. Um método com 8 anos de aplicação em empresas físicas e digitais.</p>
-    <div class="stats-row">
-      <div class="stat">
-        <span class="stat__num">R$ 80M+</span>
-        <span class="stat__label">Gerados para empresas parceiras</span>
+      <div class="nav-links" id="navLinks">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="iptv.html">IPTV</a>
+        <a href="planos.html">Planos</a>
+        <a href="teste-gratis.html">Teste Grátis</a>
+        <a href="blog.html">Blog</a>
+        <a href="faq.html">FAQ</a>
+        <a href="quem-somos.html">Quem Somos</a>
+        <a href="contato.html">Contato</a>
       </div>
-      <div class="stat">
-        <span class="stat__num stat__num--gold">8 anos</span>
-        <span class="stat__label">De método aplicado</span>
+      <div class="nav-cta">
+        <a href="teste-gratis.html" class="btn btn-ghost btn-sm">Teste Grátis</a>
+        <a href="#" class="btn btn-primary btn-sm js-wa" data-wa="Olá! Quero falar com a UniTV Brasil.">Falar no WhatsApp</a>
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navLinks" aria-label="Abrir menu"><span></span></button>
       </div>
-      <div class="stat">
-        <span class="stat__num">R$ 3M+</span>
-        <span class="stat__label">Faturados no próprio negócio</span>
+    </nav>
+  </header>
+
+  <main id="conteudo">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Sinal estável · HD, Full HD e 4K</p>
+          <h1>Teste IPTV Grátis e sinta a diferença de um sinal que <span class="grad-text">não trava</span></h1>
+          <p class="hero-sub">A UniTV Brasil entrega canais ao vivo, filmes, séries e esportes com estabilidade real, imagem em alta qualidade e suporte especializado. Peça seu teste IPTV grátis agora e comprove antes de assinar.</p>
+          <div class="hero-actions">
+            <a href="#" class="btn btn-primary js-wa" data-wa="Olá! Quero solicitar o Teste IPTV Grátis da UniTV Brasil.">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+              Solicitar Teste IPTV Grátis
+            </a>
+            <a href="planos.html" class="btn btn-ghost">Ver Planos IPTV</a>
+          </div>
+          <div class="hero-stats">
+            <div class="hero-stat"><b>4,9/5</b><span>2.300+ avaliações</span></div>
+            <div class="hero-stat"><b>+15.000</b><span>Filmes e séries</span></div>
+            <div class="hero-stat"><b>99,9%</b><span>Estabilidade de sinal</span></div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <span class="hero-chip c1"><span class="dot"></span> Sinal estável</span>
+          <span class="hero-chip c2"><span class="dot"></span> 4K Ultra HD</span>
+          <span class="hero-chip c3"><span class="dot"></span> Suporte 24/7</span>
+          <img src="images/unitv-hero.png" alt="UniTV Brasil — acesso vitalício, +500 canais, filmes, séries e qualidade 4K" width="900" height="900">
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <div class="trust-bar reveal">
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M8 21h8"/></svg>
+          +500 canais
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M8 8h.01M12 8h4"/></svg>
+          Filmes e séries
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V7l8-4z"/></svg>
+          Qualidade 4K
+        </div>
+        <div class="trust-item">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3l8 4v6c0 5-3.4 8.4-8 10-4.6-1.6-8-5-8-10V7l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+          Estabilidade garantida
+        </div>
       </div>
     </div>
-  </div>
-</header>
 
-<!-- DOR -->
-<section class="section section--warm">
-  <div class="wrap">
-    <p class="label center">Você se identifica?</p>
-    <h2 class="center">Você está cansado de...</h2>
-    <p class="center lead" style="margin:0 auto 24px;">Reconheça os sinais de que o problema não é o produto — é a percepção.</p>
-
-    <div class="pain-card">
-      <div class="pain-card__icon">😔</div>
-      <h3>Clientes que dizem "vou pensar"</h3>
-      <p>Interessados adiam a decisão mesmo gostando do seu produto — e você não sabe o que falhou na percepção.</p>
-    </div>
-    <div class="pain-card">
-      <div class="pain-card__icon">💸</div>
-      <h3>Guerra de preços sem fim</h3>
-      <p>Pedem desconto antes de enxergar valor. Concorrentes mais caros fecham — e você não entende por quê.</p>
-    </div>
-    <div class="pain-card">
-      <div class="pain-card__icon">📉</div>
-      <h3>Tráfego que não converte</h3>
-      <p>O tráfego não gera vendas — apenas expõe um funil trincado desde o começo. A página, a comunicação, a oferta.</p>
-    </div>
-    <div class="pain-card">
-      <div class="pain-card__icon">🔄</div>
-      <h3>Conteúdo sem resultado</h3>
-      <p>Posts geram curtidas, mas pouca decisão. A comunicação não traduz valor. A oferta não gera confiança.</p>
-    </div>
-  </div>
-</section>
-
-<!-- PONTE -->
-<section class="bridge">
-  <div class="wrap">
-    <h2>Se você se identificou com pelo menos 1 dessas situações...</h2>
-    <p style="font-size:18px;color:var(--navy-soft);">Este ecossistema foi criado <strong>EXATAMENTE</strong> para você. 🎯</p>
-  </div>
-</section>
-
-<!-- OFERTAS -->
-<section class="section" id="ofertas">
-  <div class="wrap wrap--wide">
-    <p class="label center">Seu acesso exclusivo</p>
-    <h2 class="center">Escolha por onde começar</h2>
-    <p class="center lead" style="margin:0 auto;">Dois produtos dentro do ecossistema Método S.E.P.® — comece pelas aulas ou entre na comunidade estratégica.</p>
-
-    <div class="offers offers--stack">
-      <div class="offer" id="fase01">
-        <div class="offer__badge">📚 Produto 01 · Fase 01</div>
-        <div class="offer__body">
-          <div class="offer__tag">📚</div>
-          <h3>O Lado Oculto do Marketing</h3>
-          <p style="font-size:14px;margin-bottom:0;">3 aulas + materiais. Fundamentos do Método S.E.P.® para reposicionar comunicação, oferta e valor percebido.</p>
-          <ul class="offer__list">
-            <li>3 aulas gravadas · acesso imediato</li>
-            <li>Gatilhos para posts que engajam</li>
-            <li>Checklist de aplicação estratégica</li>
-            <li>Atualizações da Fase 01 inclusas</li>
-            <li>Garantia de 7 dias</li>
+    <section>
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow">Entenda a tecnologia</p>
+          <h2>O que é IPTV e como funciona</h2>
+          <p>IPTV (Internet Protocol Television) é a forma de assistir TV, filmes, séries e canais ao vivo usando a sua conexão de internet, em vez do sinal tradicional a cabo ou de antena parabólica. O conteúdo chega até você em streaming, através de um aplicativo instalado na sua Smart TV, TV Box, celular, tablet ou computador.</p>
+          <p>Na prática: você recebe um login de acesso, instala o aplicativo recomendado no dispositivo de sua preferência e já pode assistir a canais ao vivo, filmes e séries com qualidade em HD, Full HD e 4K quando disponível — tudo em poucos minutos e sem precisar instalar antena ou depender de operadoras tradicionais.</p>
+          <a href="iptv.html" class="btn btn-ghost">Entender o que é IPTV em detalhes</a>
+        </div>
+        <div class="highlight-box reveal">
+          <h3>Simples assim</h3>
+          <ul class="checklist">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Funciona pela sua internet, sem antena ou cabo</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Um único acesso para TV, celular, tablet e computador</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Catálogo de canais, filmes e séries sempre atualizado</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Instalação guiada pelo nosso suporte em poucos minutos</li>
           </ul>
-          <div class="offer__price">
-            <span class="old">De R$ 197,00</span>
-            <span class="now">R$ 19,90</span>
-            <span class="note">Pagamento único · Acesso imediato</span>
-          </div>
-          <a href="#" class="btn btn--green" data-locked-cta data-checkout="fase01" rel="noopener noreferrer">Garantir as 3 Aulas →</a>
-          <p class="btn-trust">🔒 Pagamento seguro · Garantia 7 dias</p>
+          <a href="#" class="btn btn-primary js-wa" data-wa="Olá! Quero testar grátis a UniTV Brasil agora.">Testar Grátis Agora</a>
         </div>
       </div>
+    </section>
 
-      <div class="lessons-block">
-        <p class="label">Fase 01 · Conteúdo</p>
-        <h2>O que você aprende nas 3 aulas</h2>
-        <p class="lead">Cada aula gera consequência prática — você assiste, aplica e percebe a diferença na reação dos clientes.</p>
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Por que escolher a UniTV Brasil</p>
+          <h2>Tecnologia, estabilidade e qualidade em um único serviço de IPTV</h2>
+          <p>Tudo o que você precisa para assistir TV online com qualidade, sem complicação e com suporte de verdade.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h8l-1 8 11-13h-8l1-7z"/></svg></div>
+            <h3>Estabilidade de verdade</h3>
+            <p>Servidores redundantes e monitoramento contínuo do sinal para você assistir sem travar, sem tela de carregamento infinita e sem quedas nos horários de pico.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M8 21h8"/></svg></div>
+            <h3>Qualidade HD, Full HD e 4K</h3>
+            <p>Canais, filmes e séries em alta definição, com opções em 4K Ultra HD quando disponível na fonte original — imagem nítida em qualquer dispositivo.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+            <h3>Instalação simples e rápida</h3>
+            <p>Configuração guiada em poucos minutos, com aplicativo leve e compatível com os principais dispositivos do mercado. Sem complicação técnica.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 7h16M4 12h10M4 17h7"/></svg></div>
+            <h3>Atualização constante</h3>
+            <p>Catálogo de filmes, séries e canais atualizado com frequência, incluindo lançamentos, eventos esportivos e programação ao vivo.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+            <h3>Suporte especializado</h3>
+            <p>Time de atendimento treinado para te ajudar na instalação, configuração e uso do serviço, sempre que precisar.</p>
+          </article>
+          <article class="card reveal">
+            <div class="card-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="12" rx="2"/><path d="M8 20h8M12 16v4"/><rect x="7" y="8" width="4" height="6" rx="1"/></svg></div>
+            <h3>Ampla compatibilidade</h3>
+            <p>Funciona em Smart TV, TV Box, Android TV, Fire TV Stick, Chromecast, Roku, celular, tablet, notebook e computador.</p>
+          </article>
+        </div>
+      </div>
+    </section>
 
-        <div class="lesson">
-          <div class="lesson__num">1</div>
-          <div>
-            <h3>O Verdadeiro Motivo do "Vou Pensar"</h3>
-            <p>Descubra por que clientes interessados adiam a decisão. Entenda como o cérebro forma uma compra antes de comparar preços — e elimine bloqueios invisíveis.</p>
+    <section class="section-surface">
+      <div class="container split">
+        <div class="reveal">
+          <p class="eyebrow">Como funciona</p>
+          <h2>Comece a assistir em 4 passos simples</h2>
+          <p>Do primeiro contato até a primeira transmissão, o processo foi pensado para ser rápido e sem complicação técnica.</p>
+          <div class="steps">
+            <div class="step">
+              <h3>Escolha seu dispositivo</h3>
+              <p>Veja se sua Smart TV, TV Box, celular, computador ou outro aparelho é compatível — na prática, quase todos são.</p>
+            </div>
+            <div class="step">
+              <h3>Solicite seu teste ou plano</h3>
+              <p>Fale com a nossa equipe pelo WhatsApp e receba os dados de acesso, o aplicativo recomendado e o passo a passo de instalação.</p>
+            </div>
+            <div class="step">
+              <h3>Instale o aplicativo</h3>
+              <p>Siga o tutorial simples enviado pelo nosso suporte. Em poucos minutos o app estará pronto para uso no seu dispositivo.</p>
+            </div>
+            <div class="step">
+              <h3>Comece a assistir</h3>
+              <p>Acesse canais ao vivo, filmes, séries e esportes com estabilidade e qualidade de imagem em HD, Full HD ou 4K.</p>
+            </div>
           </div>
         </div>
-        <div class="lesson">
-          <div class="lesson__num">2</div>
+        <div class="highlight-box reveal">
+          <h3>Leva poucos minutos</h3>
+          <p>A maioria dos clientes está assistindo em menos de 10 minutos após o primeiro contato, do pedido do teste até a instalação concluída.</p>
+          <a href="#" class="btn btn-primary js-wa" data-wa="Olá! Quero começar agora com a UniTV Brasil.">Quero começar agora</a>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Catálogo completo</p>
+          <h2>Filmes, séries, canais ao vivo, esportes e muito mais</h2>
+          <p>Uma plataforma de IPTV Premium completa, com conteúdo para todos os gostos e todas as idades da família.</p>
+        </div>
+        <div class="grid grid-3">
+          <article class="card reveal"><h3>Filmes</h3><p>Amplo catálogo de filmes atualizado com lançamentos e clássicos de todos os gêneros, em alta definição.</p></article>
+          <article class="card reveal"><h3>Séries</h3><p>Temporadas completas e séries em destaque, sempre atualizadas, para maratonar quando e onde quiser.</p></article>
+          <article class="card reveal"><h3>Canais ao vivo</h3><p>Centenas de canais de TV aberta e fechada com transmissão estável, incluindo notícias, variedades e filmes 24h.</p></article>
+          <article class="card reveal"><h3>Esportes</h3><p>Futebol, UFC, NBA e os principais eventos esportivos ao vivo, com cobertura completa das principais competições.</p></article>
+          <article class="card reveal"><h3>Conteúdo infantil</h3><p>Canais e catálogo dedicados ao público infantil, com desenhos e programas educativos para toda a família.</p></article>
+          <article class="card reveal"><h3>Entretenimento geral</h3><p>Documentários, variedades, música e muito mais reunidos em um único lugar, sempre em boa qualidade de imagem.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-alt">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Compatibilidade ampla</p>
+          <h2>Assista TV online em qualquer tela da sua casa</h2>
+          <p>IPTV para Smart TV, IPTV para TV Box, IPTV para Android TV, IPTV para Fire TV Stick, IPTV para Roku e muito mais — tudo com o mesmo login.</p>
+        </div>
+        <div class="device-grid">
+          <div class="device"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="5" width="20" height="12" rx="2"/><path d="M8 21h8M12 17v4"/></svg><span>Smart TV</span></div>
+          <div class="device"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M9 7h6"/></svg><span>TV Box</span></div>
+          <div class="device"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="6" width="20" height="12" rx="2"/></svg><span>Android TV</span></div>
+          <div class="device"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="6" y="2" width="12" height="20" rx="2"/></svg><span>Fire TV Stick</span></div>
+          <div class="device"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 8v8M8 12h8"/></svg><span>Chromecast</span></div>
+          <div class="device"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="7" width="18" height="10" rx="2"/><path d="M7 17v2h10v-2"/></svg><span>Roku</span></div>
+          <div class="device"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="2"/></svg><span>Celular Android</span></div>
+          <div class="device"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="7" y="2" width="10" height="20" rx="3"/></svg><span>iPhone</span></div>
+          <div class="device"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="4" y="3" width="16" height="18" rx="2"/></svg><span>Tablet</span></div>
+          <div class="device"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8"/></svg><span>Notebook</span></div>
+          <div class="device"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 22h8"/></svg><span>Computador</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="planos">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Planos IPTV Premium</p>
+          <h2>Escolha o plano ideal para assistir sem travar</h2>
+          <p>Todos os planos incluem o catálogo completo de canais, filmes e séries, qualidade em HD, Full HD e 4K quando disponível, e suporte especializado.</p>
+        </div>
+        <div class="pricing-grid">
+          <article class="plan reveal">
+            <div class="plan-name">Plano Mensal</div>
+            <div class="plan-price"><b>R$ 15,00</b><span>/mês</span></div>
+            <p class="plan-desc">Ideal para conhecer a UniTV Brasil com flexibilidade mensal.</p>
+            <ul class="plan-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Canais ao vivo, filmes e séries</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Qualidade HD, Full HD e 4K quando disponível</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Compatível com todos os dispositivos</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Atualização constante do catálogo</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Suporte especializado</li>
+            </ul>
+            <a href="#" class="btn btn-ghost btn-block js-wa" data-wa="Olá! Quero contratar o Plano Mensal de R$ 15,00 da UniTV Brasil.">Contratar Plano Mensal</a>
+          </article>
+          <article class="plan reveal">
+            <div class="plan-name">Plano Trimestral</div>
+            <div class="plan-price"><b>R$ 65,00</b><span>/trimestre</span></div>
+            <p class="plan-desc">Três meses de estabilidade com prioridade no suporte.</p>
+            <ul class="plan-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Canais ao vivo, filmes e séries</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Qualidade HD, Full HD e 4K quando disponível</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Compatível com todos os dispositivos</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Atualização constante do catálogo</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Suporte especializado</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Prioridade no suporte</li>
+            </ul>
+            <a href="#" class="btn btn-ghost btn-block js-wa" data-wa="Olá! Quero contratar o Plano Trimestral de R$ 65,00 da UniTV Brasil.">Contratar Plano Trimestral</a>
+          </article>
+          <article class="plan featured reveal">
+            <div class="plan-badge">Mais escolhido</div>
+            <div class="plan-name">Plano Vitalício</div>
+            <div class="plan-price"><b>R$ 150,00</b><span>/único</span></div>
+            <p class="plan-desc">Pague uma vez e assista para sempre. Sem renovação e sem mensalidade.</p>
+            <ul class="plan-features">
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Canais ao vivo, filmes e séries</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Qualidade HD, Full HD e 4K quando disponível</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Compatível com todos os dispositivos</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Atualização constante do catálogo</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Suporte especializado</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Prioridade no suporte</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Pagamento único</li>
+              <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 13l4 4L19 7"/></svg> Acesso vitalício</li>
+            </ul>
+            <a href="#" class="btn btn-primary btn-block js-wa" data-wa="Olá! Quero contratar o Plano Vitalício de R$ 150,00 da UniTV Brasil.">Garantir Acesso Vitalício</a>
+          </article>
+        </div>
+        <p class="center" style="text-align:center;margin-top:28px;"><a href="planos.html" style="color:var(--lime);">Veja todos os detalhes de cada plano na página de Planos IPTV.</a></p>
+      </div>
+    </section>
+
+    <section class="section-surface">
+      <div class="container">
+        <div class="section-head center reveal">
+          <p class="eyebrow">Avaliações de clientes</p>
+          <h2>Quem já é cliente UniTV Brasil recomenda</h2>
+        </div>
+        <div class="testi-summary reveal">
+          <div class="testi-score">4,9</div>
           <div>
-            <h3>O Código do Valor Percebido</h3>
-            <p>Aprenda por que algumas empresas cobram mais sem vender mais barato. Pequenos ajustes fazem o cérebro enxergar mais valor antes da negociação.</p>
+            <div class="stars">★★★★★</div>
+            <p class="testi-summary-text">Baseado em mais de 2.300 avaliações de clientes reais da UniTV Brasil</p>
           </div>
         </div>
-        <div class="lesson">
-          <div class="lesson__num">3</div>
-          <div>
-            <h3>Como Fazer o Cérebro Parar de Rolar a Tela</h3>
-            <p>Capture atenção nos primeiros segundos com neurociência, emoção e memória. Crie anúncios que o cérebro processa — antes da objeção.</p>
+        <div class="testi-scroll">
+          <article class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>“Uso a UniTV Brasil todos os dias e o que mais me chama atenção é a estabilidade. Já usei outros serviços que travavam direto, aqui isso praticamente não acontece.”</p>
+            <div class="testi-user"><span class="testi-avatar">RS</span><div><b>Rafael Souza</b><span>Cliente há 8 meses</span></div></div>
+          </article>
+          <article class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>“Pedi o teste grátis achando que ia ser complicado instalar e me surpreendi. O suporte me ajudou pelo WhatsApp e em 10 minutos já estava assistindo na Smart TV.”</p>
+            <div class="testi-user"><span class="testi-avatar">JA</span><div><b>Juliana Almeida</b><span>Assinante Plano Trimestral</span></div></div>
+          </article>
+          <article class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>“O catálogo de filmes e séries é enorme e sempre tem coisa nova. Assisto também os jogos de futebol de fim de semana sem nenhum travamento.”</p>
+            <div class="testi-user"><span class="testi-avatar">CL</span><div><b>Carlos Eduardo Lima</b><span>Assinante Plano Vitalício</span></div></div>
+          </article>
+          <article class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>“A imagem em Full HD é muito boa, dá pra notar a diferença de qualidade em relação ao que eu usava antes. Recomendo para quem gosta de séries.”</p>
+            <div class="testi-user"><span class="testi-avatar">FC</span><div><b>Fernanda Costa</b><span>Assinante Plano Trimestral</span></div></div>
+          </article>
+          <article class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>“Uso no TV Box e no celular ao mesmo tempo sem problema nenhum. O suporte é rápido quando preciso de alguma ajuda com configuração.”</p>
+            <div class="testi-user"><span class="testi-avatar">BH</span><div><b>Bruno Henrique</b><span>Cliente há 1 ano</span></div></div>
+          </article>
+          <article class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>“Gostei muito da praticidade de assistir tanto na TV quanto no tablet quando estou fora de casa. A instalação foi bem tranquila.”</p>
+            <div class="testi-user"><span class="testi-avatar">PR</span><div><b>Patrícia Rocha</b><span>Assinante Plano Mensal</span></div></div>
+          </article>
+          <article class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>“Sou apaixonado por esportes e a cobertura ao vivo é excelente. Poucas vezes tive travamento, e quando acontece o suporte resolve rápido.”</p>
+            <div class="testi-user"><span class="testi-avatar">MV</span><div><b>Marcos Vinícius</b><span>Assinante Plano Vitalício</span></div></div>
+          </article>
+          <article class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>“Testei antes de assinar e essa foi a decisão certa. Deu pra ver que o serviço realmente funciona bem antes de pagar qualquer coisa.”</p>
+            <div class="testi-user"><span class="testi-avatar">CF</span><div><b>Camila Ferreira</b><span>Cliente há 6 meses</span></div></div>
+          </article>
+          <article class="testi-card reveal">
+            <div class="testi-stars">★★★★★</div>
+            <p>“Configurei no Fire TV Stick seguindo o passo a passo que me mandaram e funcionou de primeira. Hoje é o serviço que uso para tudo em casa.”</p>
+            <div class="testi-user"><span class="testi-avatar">DS</span><div><b>Diego Santos</b><span>Assinante Plano Trimestral</span></div></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section>
+      <div class="container">
+        <div class="cta-band reveal">
+          <h2>Pronto para testar uma IPTV que realmente não trava?</h2>
+          <p>Solicite agora o seu Teste IPTV Grátis pelo WhatsApp e comprove a estabilidade, a qualidade de imagem e o suporte da UniTV Brasil antes de assinar qualquer plano.</p>
+          <div class="cta-actions">
+            <a href="#" class="btn btn-primary js-wa" data-wa="Olá! Quero solicitar o Teste IPTV Grátis da UniTV Brasil.">Solicitar Teste IPTV Grátis</a>
+            <a href="planos.html" class="btn btn-ghost">Ver Planos IPTV</a>
           </div>
         </div>
       </div>
+    </section>
+  </main>
 
-      <div class="offer offer--featured" id="neuro">
-        <div class="offer__badge offer__badge--green">🧠 Produto 02 · Neuro Business</div>
-        <div class="offer__body">
-          <div class="offer__tag">🚀</div>
-          <h3>Neuro Business</h3>
-          <p style="font-size:14px;margin-bottom:0;">Comunidade no WhatsApp e Discord com aulas semanais, análise de negócios e funis de vendas.</p>
-          <ul class="offer__list">
-            <li>Aulas semanais ao vivo</li>
-            <li>Estratégias de neuromarketing aplicadas a negócios</li>
-            <li>Comportamento e tomada de decisão do consumidor</li>
-            <li>Engenharia da percepção e valor percebido</li>
-            <li>Gatilhos e mecanismos de decisão</li>
-            <li>Posicionamento e diferenciação</li>
-            <li>Análise de ofertas, páginas e conteúdos</li>
-            <li>Funis construídos a partir do comportamento do consumidor</li>
-            <li>Estudos de casos e análises práticas</li>
-            <li>Troca de experiências entre empresários e estrategistas</li>
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="brand" style="margin-bottom:16px;">
+            <img src="images/logo.svg" alt="" class="brand-mark" width="42" height="38">
+            <span class="brand-text"><strong>Uni<em>TV</em></strong><small>BRASIL</small></span>
+          </a>
+          <p>IPTV Premium com sinal estável, catálogo completo e suporte especializado. Assista onde e quando quiser, com a qualidade que você merece.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="iptv.html">O que é IPTV</a></li>
+            <li><a href="planos.html">Planos IPTV</a></li>
+            <li><a href="teste-gratis.html">Teste IPTV Grátis</a></li>
+            <li><a href="blog.html">Blog</a></li>
           </ul>
-          <div class="offer__price">
-            <span class="old">De R$ 97,00</span>
-            <span class="now">R$ 37,90</span>
-            <span class="note">Pagamento único · Acesso imediato</span>
-          </div>
-          <a href="#" class="btn btn--navy" data-locked-cta data-checkout="neuro" rel="noopener noreferrer">Entrar na Neuro Business →</a>
-          <p class="btn-trust">🔒 Pagamento seguro · Acesso imediato</p>
+        </div>
+        <div class="footer-col">
+          <h4>Empresa</h4>
+          <ul>
+            <li><a href="quem-somos.html">Quem Somos</a></li>
+            <li><a href="faq.html">Perguntas Frequentes</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="privacidade.html">Política de Privacidade</a></li>
+            <li><a href="termos.html">Termos de Uso</a></li>
+          </ul>
         </div>
       </div>
+      <div class="footer-bottom">
+        <span>© 2026 UniTV Brasil. Todos os direitos reservados.</span>
+        <span>Acesso vitalício · Qualidade 4K · Suporte especializado</span>
+      </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- COMO FUNCIONA -->
-<section class="section section--warm">
-  <div class="wrap">
-    <p class="label center">Simples e direto</p>
-    <h2 class="center">Como funciona?</h2>
-    <p class="center lead" style="margin:0 auto 24px;">3 passos para começar sua transformação.</p>
-
-    <div class="step-card">
-      <div class="step-card__icon">📝</div>
-      <h3>1. Escolha seu acesso</h3>
-      <p style="font-size:14px;margin:0;">Fase 01 (3 aulas), Neuro Business (comunidade) ou o pacote completo. Clique e pague com segurança.</p>
-    </div>
-    <div class="step-card">
-      <div class="step-card__icon">📧</div>
-      <h3>2. Receba o acesso</h3>
-      <p style="font-size:14px;margin:0;">Confirmação por e-mail com link das aulas e/ou convite da comunidade.</p>
-    </div>
-    <div class="step-card step-card--final">
-      <div class="step-card__icon">⭐</div>
-      <h3>3. Aplique e evolua</h3>
-      <p style="font-size:14px;margin:0;">Assista, aplique no seu negócio e evolua com o método e a comunidade.</p>
-    </div>
-  </div>
-</section>
-
-<!-- GARANTIA -->
-<section class="section">
-  <div class="wrap">
-    <div class="guarantee">
-      <h3>🛡️ Garantia incondicional de 7 dias</h3>
-      <p>Se não fizer sentido para o seu momento, solicite reembolso dentro do prazo. Sem perguntas. O risco fica do meu lado.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ÚLTIMA CHAMADA -->
-<section class="section center section--warm">
-  <div class="wrap">
-    <p class="label">Última chamada</p>
-    <h2>Seu negócio continuará sendo percebido da maneira errada — ou você age agora.</h2>
-    <p class="lead" style="margin:0 auto;">A decisão que falta é só uma.</p>
-  </div>
-</section>
-
-<!-- CTA FINAL — COMBO -->
-<section class="section center" id="combo">
-  <div class="wrap">
-    <div class="combo">
-      <p class="label">🔥 Melhor custo-benefício</p>
-      <h2>Acesso Completo · 2 em 1</h2>
-      <p>Fase 01 (3 aulas) + Neuro Business (comunidade) — tudo que você precisa para aplicar o Método S.E.P.® e evoluir com estratégia contínua.</p>
-      <p style="font-size:14px;opacity:.7;text-decoration:line-through;margin-bottom:0;">R$ 19,90 + R$ 37,90 = R$ 57,80</p>
-      <div class="combo__price">R$ 47,96</div>
-      <span class="combo__save">Você economiza R$ 9,84</span>
-      <a href="#" class="btn btn--green" data-locked-cta data-checkout="bundle" rel="noopener noreferrer" style="max-width:380px;margin:0 auto;">Garantir Acesso Completo →</a>
-      <p class="btn-trust" style="color:rgba(255,255,255,.6);margin-top:12px;">🔒 Pagamento seguro · Garantia 7 dias · Acesso imediato</p>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="wrap">
-    <p><strong>Método S.E.P.®</strong> — Sistema de Engenharia da Percepção</p>
-    <p>Criado por Nara Batista · Arcano Ltda</p>
-    <p>CNPJ: 63.745.900/0001-88</p>
-    <p style="margin-top:12px;opacity:.7;">Propriedade de Arcano Digital LTDA. Todos os direitos reservados.</p>
-  </div>
-</footer>
-
-<script>
-(function(){
-  'use strict';
-  var stores={
-    fase01:{
-      p:['aHR0cHM6Ly9wYXkuY2FrdG8u','Y29tLmJyL2Z1YXVidHhf','MTAyMjMzMw=='],
-      v:'YWNnYjZw'
-    },
-    neuro:{
-      p:['aHR0cHM6Ly9wYXkuY2FrdG8u','Y29tLmJyLzNlZXVuanlf','MTAzNDM2MA=='],
-      v:'LTk2OG52Mg=='
-    },
-    bundle:{
-      p:['aHR0cHM6Ly9wYXkuY2FrdG8u','Y29tLmJyLzh4a2VkeWFf','MTAzNDQyOQ=='],
-      v:'NnRzaml2'
-    }
-  };
-  var urls={},sigs={};
-  Object.keys(stores).forEach(function(id){
-    var s=stores[id],u=atob(s.p.join(''));
-    var h=0;
-    for(var i=0;i<u.length;i++){h=((h<<5)-h)+u.charCodeAt(i);h|=0;}
-    var sig=h.toString(36);
-    if(sig!==atob(s.v))return;
-    urls[id]=u;
-    sigs[id]=sig;
-  });
-
-  function go(el){
-    if(!el||el.dataset.ctaSealed!=='1')return;
-    var id=el.dataset.checkout||'bundle';
-    if(el.dataset.ctaSig!==sigs[id]||!urls[id])return;
-    window.location.assign(urls[id]);
-  }
-
-  function seal(el){
-    if(!el||el.dataset.ctaSealed==='1')return;
-    var id=el.dataset.checkout||'bundle';
-    if(!sigs[id])return;
-    el.dataset.ctaSealed='1';
-    el.setAttribute('href','#');
-    el.setAttribute('data-cta-sig',sigs[id]);
-    el.setAttribute('rel','noopener noreferrer nofollow');
-    el.setAttribute('draggable','false');
-    if(el.onclick)el.onclick=null;
-  }
-
-  function neutralize(el){
-    if(!el||el.nodeType!==1)return;
-    if(el.matches&&el.matches('.allow-link'))return;
-    if(el.matches&&el.matches('[data-locked-cta]')){
-      if(el.getAttribute('href')!=='#')el.setAttribute('href','#');
-      if(el.onclick)el.onclick=null;
-      return;
-    }
-    if(el.tagName==='A'){
-      el.setAttribute('href','#');
-      el.removeAttribute('target');
-      el.removeAttribute('download');
-      el.removeAttribute('ping');
-      if(el.onclick)el.onclick=null;
-    }
-    if(el.tagName==='BASE')el.remove();
-    if(el.tagName==='FORM'){
-      el.setAttribute('action','#');
-      el.setAttribute('method','get');
-    }
-    if(el.hasAttribute&&el.hasAttribute('data-href'))el.removeAttribute('data-href');
-  }
-
-  function guard(){
-    document.querySelectorAll('[data-locked-cta]').forEach(seal);
-    document.querySelectorAll('a[href],base,form[action]').forEach(neutralize);
-  }
-
-  document.addEventListener('click',function(ev){
-    var t=ev.target;
-    if(!t||!t.closest)return;
-    if(t.closest('.allow-link'))return;
-    var cta=t.closest('[data-locked-cta]');
-    if(cta&&cta.dataset.ctaSealed==='1'){
-      ev.preventDefault();
-      ev.stopImmediatePropagation();
-      go(cta);
-      return;
-    }
-    if(t.closest('a')){
-      ev.preventDefault();
-      ev.stopImmediatePropagation();
-    }
-  },true);
-
-  document.addEventListener('auxclick',function(ev){
-    var t=ev.target;
-    if(!t||!t.closest)return;
-    if(t.closest('.allow-link'))return;
-    var cta=t.closest('[data-locked-cta]');
-    if(cta&&cta.dataset.ctaSealed==='1'&&ev.button===1){
-      ev.preventDefault();
-      go(cta);
-      return;
-    }
-    if(t.closest('a'))ev.preventDefault();
-  },true);
-
-  document.addEventListener('keydown',function(ev){
-    if(ev.key!=='Enter'&&ev.key!==' ')return;
-    var t=ev.target;
-    if(!t||!t.closest)return;
-    if(t.closest('.allow-link'))return;
-    var cta=t.closest('[data-locked-cta]');
-    if(cta&&cta.dataset.ctaSealed==='1'){
-      ev.preventDefault();
-      go(cta);
-      return;
-    }
-    if(t.closest('a'))ev.preventDefault();
-  },true);
-
-  if(document.readyState==='loading'){
-    document.addEventListener('DOMContentLoaded',guard);
-  }else{
-    guard();
-  }
-
-  new MutationObserver(function(){guard();}).observe(document.documentElement,{
-    subtree:true,attributes:true,childList:true,
-    attributeFilter:['href','action','onclick','target','data-href','ping','download']
-  });
-
-  setInterval(guard,800);
-})();
-</script>
-<script>
-(function(){
-  'use strict';
-  if(window.matchMedia('(prefers-reduced-motion: reduce)').matches)return;
-
-  var nav=document.querySelector('.nav');
-  window.addEventListener('scroll',function(){
-    if(!nav)return;
-    nav.classList.toggle('is-scrolled',window.scrollY>12);
-  },{passive:true});
-
-  var targets=document.querySelectorAll(
-    '.section > .wrap, .bridge .wrap, .pain-card, .stat, .offer, .lesson, .step-card, .combo, .guarantee, .lessons-block'
-  );
-  targets.forEach(function(el,i){
-    el.classList.add('reveal');
-    if(i%3===1)el.classList.add('reveal--delay-1');
-    if(i%3===2)el.classList.add('reveal--delay-2');
-  });
-
-  if(!('IntersectionObserver' in window)){
-    targets.forEach(function(el){el.classList.add('is-visible');});
-    return;
-  }
-
-  var io=new IntersectionObserver(function(entries){
-    entries.forEach(function(entry){
-      if(entry.isIntersecting){
-        entry.target.classList.add('is-visible');
-        io.unobserve(entry.target);
-      }
-    });
-  },{threshold:0.12,rootMargin:'0px 0px -40px 0px'});
-
-  targets.forEach(function(el){io.observe(el);});
-})();
-</script>
+  <a href="#" class="whats-float js-wa" data-wa="Olá! Quero falar com a UniTV Brasil." aria-label="Falar no WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 3.5A11 11 0 0 0 2.1 16.8L1 23l6.4-1.1A11 11 0 0 0 12 23a11 11 0 0 0 8.5-19.5zM12 21a9 9 0 0 1-4.6-1.3l-.3-.2-3.8.7.7-3.7-.2-.3A9 9 0 1 1 12 21zm5-6.7c-.3-.1-1.6-.8-1.8-.9s-.4-.1-.6.1-.7.9-.8 1-.3.2-.6.1a7.4 7.4 0 0 1-2.2-1.4 8.2 8.2 0 0 1-1.5-1.9c-.2-.3 0-.4.1-.6l.4-.5.1-.3a.5.5 0 0 0 0-.5c0-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.2 5 5 0 0 0 1.1 2.7 11.5 11.5 0 0 0 4.4 3.9 15 15 0 0 0 1.5.6 3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.3 2.2 2.2 0 0 0 .2-1.3c-.1-.1-.3-.2-.6-.3z"/></svg>
+  </a>
+  <script src="js/main.js"></script>
 </body>
 </html>
