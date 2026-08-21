@@ -4,7 +4,7 @@
   --color-ink: #171512;
   --color-plate: #221f1b;
   --color-hairline: #3a342c;
-  --color-signal: #c4843c;
+  --color-signal: #3e5f7a;
   --color-paper: #ede6d9;
   --color-quiet: #9a9184;
   --font-sans: var(--font-plex), ui-sans-serif, system-ui, sans-serif;
@@ -24,18 +24,18 @@ body {
 }
 
 ::selection {
-  background: rgba(196, 132, 60, 0.28);
+  background: rgba(62, 95, 122, 0.35);
   color: #ede6d9;
 }
 
 :focus-visible {
-  outline: 2px solid #c4843c;
+  outline: 2px solid #3e5f7a;
   outline-offset: 3px;
 }
 
 .neural-bg {
   background:
-    radial-gradient(720px 280px at 50% -12%, rgba(196, 132, 60, 0.07), transparent 62%),
+    radial-gradient(720px 280px at 50% -12%, rgba(62, 95, 122, 0.12), transparent 62%),
     #171512;
 }
 
@@ -51,7 +51,7 @@ body {
   min-height: 48px;
   padding: 0 20px;
   border-radius: 2px;
-  border: 1px solid #c4843c;
+  border: 1px solid #3e5f7a;
   background: transparent;
   color: #ede6d9;
   font-family: var(--font-mono);
@@ -63,8 +63,8 @@ body {
 }
 
 .btn-primary:hover {
-  background: #c4843c;
-  color: #171512;
+  background: #3e5f7a;
+  color: #ede6d9;
 }
 
 .btn-ghost {
@@ -83,8 +83,8 @@ body {
 }
 
 .btn-ghost:hover {
-  color: #c4843c;
-  text-decoration-color: #c4843c;
+  color: #3e5f7a;
+  text-decoration-color: #3e5f7a;
 }
 
 .btn-outline {
@@ -106,16 +106,16 @@ body {
 
 .btn-outline:hover,
 .btn-outline.is-primary:hover {
-  border-color: #c4843c;
-  background: rgba(196, 132, 60, 0.06);
+  border-color: #3e5f7a;
+  background: rgba(62, 95, 122, 0.1);
 }
 
 .btn-outline.is-primary {
-  border-color: #c4843c;
+  border-color: #3e5f7a;
 }
 
 .kicker {
-  color: #c4843c;
+  color: #3e5f7a;
   font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 500;
@@ -157,7 +157,7 @@ body {
 
 .scan-line {
   width: 48px;
-  background: linear-gradient(90deg, transparent, rgba(196, 132, 60, 0.35), transparent);
+  background: linear-gradient(90deg, transparent, rgba(62, 95, 122, 0.45), transparent);
 }
 
 @media (prefers-reduced-motion: no-preference) {
