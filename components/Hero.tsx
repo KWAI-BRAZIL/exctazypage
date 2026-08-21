@@ -3,32 +3,32 @@ import { CTA_LABEL, WHATSAPP } from "@/lib/constants";
 import { NeuralField } from "./NeuralField";
 
 const nodes = [
-  { label: "Empresas", x: "8%", y: "22%" },
-  { label: "Estratégias", x: "82%", y: "18%" },
-  { label: "Dados", x: "12%", y: "72%" },
-  { label: "Percepção", x: "78%", y: "68%" },
-  { label: "Comportamento", x: "50%", y: "8%" },
-  { label: "Crescimento", x: "50%", y: "86%" },
+  { label: "Empresas", x: "6%", y: "18%" },
+  { label: "Estratégias", x: "78%", y: "14%" },
+  { label: "Dados", x: "8%", y: "72%" },
+  { label: "Percepção", x: "76%", y: "70%" },
+  { label: "Comportamento", x: "42%", y: "6%" },
+  { label: "Crescimento", x: "44%", y: "86%" },
 ];
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden px-5 pb-20 pt-16 md:pt-24">
+    <section className="relative overflow-hidden px-5 pb-20 pt-16 md:pb-28 md:pt-24">
       <NeuralField />
-      <div className="relative mx-auto grid max-w-6xl items-center gap-12 lg:grid-cols-[1.15fr_0.85fr]">
-        <div className="reveal">
+      <div className="relative mx-auto grid max-w-6xl items-end gap-16 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)]">
+        <div className="reveal max-w-3xl">
           <p className="kicker">Neuro Business</p>
-          <h1 className="display mt-4 max-w-3xl text-4xl text-white md:text-6xl">
+          <h1 className="display mt-6 text-[2.4rem] text-paper md:text-6xl">
             Seu negócio pode não precisar de mais marketing.
-            <span className="block text-blue">Pode precisar ser melhor percebido.</span>
+            <span className="mt-3 block italic text-signal">Pode precisar ser melhor percebido.</span>
           </h1>
-          <p className="mt-6 max-w-2xl text-base leading-7 text-muted md:text-lg">
+          <p className="mt-8 max-w-[62ch] text-base leading-7 text-quiet md:text-lg">
             Antes de investir mais em anúncios, conteúdo ou vendas, descubra como o cérebro do seu cliente interpreta sua empresa.
           </p>
-          <p className="mt-4 max-w-2xl text-base leading-7 text-muted">
+          <p className="mt-4 max-w-[62ch] text-base leading-7 text-quiet">
             A Neuro Business é um ecossistema de evolução para empreendedores que querem transformar percepção em valor, desejo, confiança e crescimento.
           </p>
-          <div className="mt-8 flex flex-col gap-3 sm:flex-row">
+          <div className="mt-10 flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-8">
             <a href={WHATSAPP.consultants} target="_blank" rel="noopener noreferrer" className="btn-primary">
               {CTA_LABEL}
             </a>
@@ -38,27 +38,17 @@ export function Hero() {
           </div>
         </div>
 
-        <div className="relative mx-auto h-[420px] w-full max-w-md">
-          <div className="glass absolute inset-0 rounded-[32px]" />
-          <svg className="absolute inset-6 h-[calc(100%-48px)] w-[calc(100%-48px)]" viewBox="0 0 320 360" fill="none" aria-hidden="true">
-            <path className="orbit-line" d="M160 180 C 80 90, 70 70, 40 70" stroke="#7ec8ff" strokeOpacity="0.4" />
-            <path className="orbit-line" d="M160 180 C 240 80, 250 60, 280 55" stroke="#7ec8ff" strokeOpacity="0.4" />
-            <path className="orbit-line" d="M160 180 C 60 220, 50 270, 40 300" stroke="#7ec8ff" strokeOpacity="0.4" />
-            <path className="orbit-line" d="M160 180 C 250 230, 270 270, 280 305" stroke="#7ec8ff" strokeOpacity="0.4" />
-            <path className="orbit-line" d="M160 180 C 160 90, 160 50, 160 28" stroke="#7ec8ff" strokeOpacity="0.4" />
-            <path className="orbit-line" d="M160 180 C 160 250, 160 300, 160 332" stroke="#7ec8ff" strokeOpacity="0.4" />
-            <ellipse cx="160" cy="178" rx="54" ry="64" fill="rgba(126,200,255,0.08)" stroke="#7ec8ff" strokeOpacity="0.7" />
-            <path d="M160 120 C 130 125, 118 155, 122 178 C 126 205, 142 228, 160 232 C 178 228, 194 205, 198 178 C 202 155, 190 125, 160 120 Z" stroke="#7ec8ff" strokeWidth="1.4" />
-            <path d="M160 128 V 224" stroke="#7ec8ff" strokeOpacity="0.4" />
-          </svg>
-          <div className="absolute left-1/2 top-1/2 z-10 w-36 -translate-x-1/2 -translate-y-1/2 text-center">
-            <p className="text-xs font-semibold tracking-[0.18em] text-blue">CÉREBRO</p>
-            <p className="mt-1 text-sm text-white">decisão · percepção</p>
+        <div className="relative mx-auto hidden h-[380px] w-full max-w-md lg:block">
+          <span className="absolute left-1/2 top-8 h-[78%] w-px -translate-x-1/2 bg-hairline" />
+          <span className="absolute left-[12%] top-1/2 h-px w-[76%] bg-hairline" />
+          <div className="absolute left-1/2 top-1/2 z-10 -translate-x-1/2 -translate-y-1/2 text-center">
+            <p className="mono text-[10px] text-signal">Cérebro</p>
+            <p className="mt-1 text-sm text-paper">decisão · percepção</p>
           </div>
           {nodes.map((node) => (
             <div
               key={node.label}
-              className="glass-soft absolute z-10 rounded-full px-3 py-1.5 text-[11px] font-semibold tracking-wide text-blue"
+              className="absolute z-10 font-mono text-[10px] uppercase tracking-[0.16em] text-quiet"
               style={{ left: node.x, top: node.y }}
             >
               {node.label}

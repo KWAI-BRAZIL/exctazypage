@@ -1,3 +1,5 @@
+import { ProcessRail } from "./ProcessRail";
+
 const pillars = [
   {
     letter: "S",
@@ -65,39 +67,38 @@ const pillars = [
 
 export function SEPMethodSection() {
   return (
-    <section id="metodo" className="px-5 py-20">
+    <section id="metodo" className="border-t border-hairline px-5 py-20 md:py-24">
       <div className="mx-auto max-w-6xl">
         <p className="kicker">Método S.E.P.®</p>
-        <h2 className="display mt-4 max-w-3xl text-3xl text-white md:text-5xl">
+        <h2 className="display mt-4 max-w-3xl text-3xl md:text-5xl">
           O método que está no centro da Neuro Business.
         </h2>
-        <p className="mt-3 text-xl text-blue">S.E.P.® · Sistema de Engenharia da Percepção®</p>
-        <p className="mt-5 max-w-3xl text-muted">
+        <p className="mt-3 font-mono text-sm tracking-[0.12em] text-signal">S.E.P.® · Sistema de Engenharia da Percepção®</p>
+        <p className="mt-5 max-w-3xl text-quiet">
           O S.E.P. é um método criado para analisar e projetar a forma como o mercado percebe uma empresa antes mesmo da decisão de compra. O método possui três pilares.
         </p>
 
-        <div className="mt-8 flex flex-wrap items-center gap-3 text-sm">
-          {["ENTENDER", "ANALISAR", "PROJETAR"].map((step, i) => (
-            <div key={step} className="flex items-center gap-3">
-              <span className="rounded-full border border-blue/40 bg-blue/10 px-4 py-2 font-semibold tracking-[0.16em] text-blue">
-                {["S", "E", "P"][i]} · {step}
-              </span>
-              {i < 2 && <span className="hidden text-blue md:inline">↓</span>}
-            </div>
-          ))}
+        <div className="mt-10">
+          <ProcessRail
+            steps={[
+              { label: "S · Entender" },
+              { label: "E · Analisar" },
+              { label: "P · Projetar" },
+            ]}
+          />
         </div>
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-3">
+        <div className="mt-10 grid gap-px bg-hairline lg:grid-cols-3">
           {pillars.map((pillar) => (
-            <article key={pillar.letter} className="glass rounded-[28px] p-6">
-              <div className="display text-5xl text-blue">{pillar.letter}</div>
-              <h3 className="mt-3 text-xl font-semibold text-white">{pillar.title}</h3>
-              <p className="mt-2 text-sm text-muted">{pillar.line}</p>
-              <p className="mt-5 text-xs tracking-[0.16em] text-blue">ESTUDO DE</p>
-              <p className="mt-2 text-sm leading-6 text-white/85">{pillar.study.join("; ")}.</p>
-              <p className="mt-5 text-xs tracking-[0.16em] text-blue">ENTREGA</p>
-              <p className="mt-2 font-semibold text-white">{pillar.deliver}</p>
-              <p className="mt-4 text-sm italic text-muted">{pillar.question}</p>
+            <article key={pillar.letter} className="group bg-ink p-6 transition-colors hover:bg-plate md:p-7">
+              <p className="font-mono text-4xl text-signal">{pillar.letter}</p>
+              <h3 className="mt-3 text-xl font-medium text-paper">{pillar.title}</h3>
+              <p className="mt-2 text-sm text-quiet">{pillar.line}</p>
+              <p className="mono mt-6 text-[10px] text-signal">Estudo de</p>
+              <p className="mt-2 text-sm leading-6 text-paper/90">{pillar.study.join("; ")}.</p>
+              <p className="mono mt-6 text-[10px] text-signal">Entrega</p>
+              <p className="mt-2 font-medium text-paper">{pillar.deliver}</p>
+              <p className="mt-4 text-sm italic text-quiet">{pillar.question}</p>
             </article>
           ))}
         </div>

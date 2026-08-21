@@ -5,6 +5,7 @@ import { BusinessAnalysisSection } from "@/components/BusinessAnalysisSection";
 import { ComparisonSection } from "@/components/ComparisonSection";
 import { CTA } from "@/components/CTA";
 import { EcosystemBenefitsSection } from "@/components/EcosystemBenefitsSection";
+import { EcosystemSection } from "@/components/EcosystemSection";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";

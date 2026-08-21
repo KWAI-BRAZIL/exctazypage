@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { ChevronDown } from "lucide-react";
 
 const items = [
   {
@@ -37,20 +38,28 @@ export function FAQ() {
   const [open, setOpen] = useState(0);
 
   return (
-    <section id="faq" className="px-5 py-20">
+    <section id="faq" className="border-t border-hairline px-5 py-20 md:py-24">
       <div className="mx-auto max-w-3xl">
         <p className="kicker">FAQ</p>
-        <h2 className="display mt-4 text-3xl text-white md:text-5xl">Perguntas frequentes</h2>
-        <div className="mt-8 space-y-3">
+        <h2 className="display mt-4 text-3xl md:text-5xl">Perguntas frequentes</h2>
+        <div className="mt-10 divide-y divide-hairline border-y border-hairline">
           {items.map((item, i) => (
             <button
               key={item.q}
               type="button"
               onClick={() => setOpen(open === i ? -1 : i)}
-              className="glass w-full rounded-2xl p-5 text-left"
+              className="w-full py-5 text-left"
+              aria-expanded={open === i}
             >
-              <p className="font-semibold text-white">{item.q}</p>
-              {open === i && <p className="mt-3 text-sm leading-6 text-muted">{item.a}</p>}
+              <span className="flex items-start justify-between gap-4">
+                <span className="font-medium text-paper">{item.q}</span>
+                <ChevronDown
+                  size={18}
+                  strokeWidth={1.5}
+                  className={`mt-0.5 shrink-0 text-signal transition-transform ${open === i ? "rotate-180" : ""}`}
+                />
+              </span>
+              {open === i && <p className="mt-3 max-w-[58ch] text-sm leading-6 text-quiet">{item.a}</p>}
             </button>
           ))}
         </div>

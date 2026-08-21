@@ -64,12 +64,12 @@ export function Logo({ className = "", size = "md" }: LogoProps) {
     <div className={`inline-flex items-center ${s.gap} ${className}`}>
       <BrainMark size={s.icon} />
       <div className="flex min-w-0 flex-col">
-        <p className={`whitespace-nowrap font-display font-extrabold leading-none tracking-[-0.045em] ${s.word}`}>
+        <p className={`whitespace-nowrap font-sans font-extrabold leading-none tracking-[-0.045em] ${s.word}`}>
           <span className="text-[#FF1F1F]">Neuro</span>
           <span className="text-white">business</span>
         </p>
         <p
-          className={`flex w-full justify-between font-display font-bold leading-none text-[#FF1F1F] ${s.digital}`}
+          className={`flex w-full justify-between font-sans font-bold leading-none text-[#FF1F1F] ${s.digital}`}
           aria-label="Digital"
         >
           {"DIGITAL".split("").map((letter, i) => (

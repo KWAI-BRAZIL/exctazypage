@@ -11,12 +11,12 @@ const links = [
 
 export function Header() {
   return (
-    <header className="sticky top-0 z-40 border-b border-white/5 bg-black/55 backdrop-blur-xl">
+    <header className="sticky top-0 z-40 border-b border-hairline bg-ink/90 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-5 py-3">
         <LogoLink />
-        <nav className="hidden items-center gap-6 text-sm text-muted md:flex">
+        <nav className="hidden items-center gap-6 font-mono text-[11px] uppercase tracking-[0.16em] text-quiet md:flex">
           {links.map((link) => (
-            <Link key={link.href} href={link.href} className="transition hover:text-blue">
+            <Link key={link.href} href={link.href} className="transition hover:text-signal">
               {link.label}
             </Link>
           ))}
@@ -25,7 +25,7 @@ export function Header() {
           href={WHATSAPP.consultants}
           target="_blank"
           rel="noopener noreferrer"
-          className="btn-primary !min-h-10 !px-4 !text-[11px]"
+          className="btn-primary !min-h-9 !px-3 !text-[10px]"
         >
           {CTA_LABEL}
         </a>

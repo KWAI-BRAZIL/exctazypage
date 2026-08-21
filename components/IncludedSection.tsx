@@ -19,20 +19,21 @@ const included = [
 
 export function IncludedSection() {
   return (
-    <section className="px-5 py-20">
+    <section className="border-t border-hairline px-5 py-20 md:py-24">
       <div className="mx-auto max-w-6xl">
         <p className="kicker">O que está incluso</p>
-        <h2 className="display mt-4 max-w-3xl text-3xl text-white md:text-5xl">
+        <h2 className="display mt-4 max-w-3xl text-3xl md:text-5xl">
           Ao entrar na Neuro Business você terá acesso a:
         </h2>
-        <div className="mt-10 grid gap-3 sm:grid-cols-2">
+        <ul className="mt-12 grid sm:grid-cols-2">
           {included.map((item) => (
-            <div key={item} className="glass-soft rounded-2xl px-4 py-4 text-sm text-white">
-              ✓ {item}
-            </div>
+            <li key={item} className="flex items-start gap-4 border-t border-hairline py-4 text-sm text-paper">
+              <span className="mt-2 h-px w-5 shrink-0 bg-signal" />
+              {item}
+            </li>
           ))}
-        </div>
-        <p className="display mx-auto mt-10 max-w-3xl text-center text-2xl text-white">
+        </ul>
+        <p className="display mx-auto mt-12 max-w-3xl text-center text-2xl">
           Você não entra para receber mais conteúdo. Você entra para desenvolver uma nova forma de enxergar o seu negócio.
         </p>
       </div>

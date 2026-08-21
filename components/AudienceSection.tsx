@@ -20,21 +20,27 @@ const no = [
 
 export function AudienceSection() {
   return (
-    <section className="px-5 py-20">
-      <div className="mx-auto grid max-w-6xl gap-5 md:grid-cols-2">
-        <article className="glass rounded-[28px] p-7">
-          <h2 className="display text-2xl text-white md:text-3xl">A Neuro Business é para você que:</h2>
-          <ul className="mt-6 space-y-3 text-sm text-white/90">
+    <section className="border-t border-hairline px-5 py-20 md:py-24">
+      <div className="mx-auto grid max-w-6xl md:grid-cols-2">
+        <article className="border-b border-hairline py-2 pr-0 md:border-b-0 md:border-r md:pr-10">
+          <p className="mono text-[10px] text-signal">Indicação</p>
+          <h2 className="display mt-3 text-2xl md:text-3xl">A Neuro Business é para você que:</h2>
+          <ul className="mt-8">
             {yes.map((item) => (
-              <li key={item}>✓ {item}</li>
+              <li key={item} className="border-t border-hairline py-3 text-sm leading-6 text-paper">
+                {item}
+              </li>
             ))}
           </ul>
         </article>
-        <article className="rounded-[28px] border border-white/10 bg-white/3 p-7">
-          <h2 className="display text-2xl text-white md:text-3xl">Talvez não seja para você se:</h2>
-          <ul className="mt-6 space-y-3 text-sm text-muted">
+        <article className="py-2 md:pl-10">
+          <p className="mono text-[10px] text-quiet">Contraindicação</p>
+          <h2 className="display mt-3 text-2xl text-quiet md:text-3xl">Talvez não seja para você se:</h2>
+          <ul className="mt-8">
             {no.map((item) => (
-              <li key={item}>✕ {item}</li>
+              <li key={item} className="border-t border-hairline py-3 text-sm leading-6 italic text-quiet">
+                {item}
+              </li>
             ))}
           </ul>
         </article>

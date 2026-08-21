@@ -33,40 +33,40 @@ const extras = [
 
 export function EcosystemBenefitsSection() {
   return (
-    <section id="beneficios" className="px-5 py-20">
+    <section id="beneficios" className="border-t border-hairline px-5 py-20 md:py-24">
       <div className="mx-auto max-w-6xl">
         <p className="kicker">Benefícios do ecossistema</p>
-        <h2 className="display mt-4 max-w-3xl text-3xl text-white md:text-5xl">
+        <h2 className="display mt-4 max-w-3xl text-3xl md:text-5xl">
           Você não entra para consumir conteúdo. Entra para ser acompanhado.
         </h2>
-        <p className="mt-5 max-w-3xl text-muted">
+        <p className="mt-5 max-w-3xl text-quiet">
           A Neuro Business combina mentoria, método e leitura constante do mercado. O objetivo é reduzir a distância entre o que a sua empresa acredita transmitir e o que o cliente realmente percebe.
         </p>
 
-        <div className="mt-10 grid gap-5 lg:grid-cols-2">
+        <div className="mt-12 grid gap-px bg-hairline lg:grid-cols-2">
           {highlights.map((item) => (
-            <article key={item.title} className="glass rounded-[28px] p-7">
-              <p className="text-xs tracking-[0.18em] text-blue">PILAR</p>
-              <h3 className="display mt-3 text-2xl text-white md:text-3xl">{item.title}</h3>
-              <p className="mt-4 text-sm leading-7 text-muted">{item.text}</p>
+            <article key={item.title} className="group bg-ink p-7 transition-colors hover:bg-plate md:p-8">
+              <p className="mono text-[10px] text-signal">Pilar</p>
+              <h3 className="display mt-3 text-2xl md:text-3xl">{item.title}</h3>
+              <p className="mt-4 text-sm leading-7 text-quiet">{item.text}</p>
             </article>
           ))}
         </div>
 
-        <div className="mt-5 grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-px bg-hairline sm:grid-cols-2 lg:grid-cols-4">
           {extras.map((item) => (
-            <article key={item.title} className="glass-soft rounded-[24px] p-5">
-              <h3 className="text-base font-semibold text-white">{item.title}</h3>
-              <p className="mt-3 text-sm leading-6 text-muted">{item.text}</p>
+            <article key={item.title} className="bg-ink p-5 transition-colors hover:bg-plate">
+              <h3 className="text-base font-medium text-paper">{item.title}</h3>
+              <p className="mt-3 text-sm leading-6 text-quiet">{item.text}</p>
             </article>
           ))}
         </div>
 
-        <div className="mt-10 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+        <div className="mt-10 flex flex-col items-start gap-2 sm:flex-row sm:items-center sm:gap-8">
           <a href={WHATSAPP.consultants} target="_blank" rel="noopener noreferrer" className="btn-primary">
             {CTA_LABEL}
           </a>
-          <Link href="#ecossistema" className="text-sm text-blue hover:underline">
+          <Link href="#ecossistema" className="btn-ghost">
             Ver o mapa do ecossistema
           </Link>
         </div>
