@@ -4,7 +4,7 @@
   --color-ink: #171512;
   --color-plate: #221f1b;
   --color-hairline: #3a342c;
-  --color-signal: #3e5f7a;
+  --color-signal: #7e9bb8;
   --color-paper: #ede6d9;
   --color-quiet: #9a9184;
   --font-sans: var(--font-plex), ui-sans-serif, system-ui, sans-serif;
@@ -24,18 +24,18 @@ body {
 }
 
 ::selection {
-  background: rgba(62, 95, 122, 0.35);
+  background: rgba(126, 155, 184), 0.35);
   color: #ede6d9;
 }
 
 :focus-visible {
-  outline: 2px solid #3e5f7a;
+  outline: 2px solid #7e9bb8;
   outline-offset: 3px;
 }
 
 .neural-bg {
   background:
-    radial-gradient(720px 280px at 50% -12%, rgba(62, 95, 122, 0.12), transparent 62%),
+    radial-gradient(720px 280px at 50% -12%, rgba(126, 155, 184), 0.12), transparent 62%),
     #171512;
 }
 
@@ -51,7 +51,7 @@ body {
   min-height: 48px;
   padding: 0 20px;
   border-radius: 2px;
-  border: 1px solid #3e5f7a;
+  border: 1px solid #7e9bb8;
   background: transparent;
   color: #ede6d9;
   font-family: var(--font-mono);
@@ -63,7 +63,7 @@ body {
 }
 
 .btn-primary:hover {
-  background: #3e5f7a;
+  background: #7e9bb8;
   color: #ede6d9;
 }
 
@@ -83,8 +83,8 @@ body {
 }
 
 .btn-ghost:hover {
-  color: #3e5f7a;
-  text-decoration-color: #3e5f7a;
+  color: #7e9bb8;
+  text-decoration-color: #7e9bb8;
 }
 
 .btn-outline {
@@ -106,16 +106,16 @@ body {
 
 .btn-outline:hover,
 .btn-outline.is-primary:hover {
-  border-color: #3e5f7a;
-  background: rgba(62, 95, 122, 0.1);
+  border-color: #7e9bb8;
+  background: rgba(126, 155, 184), 0.1);
 }
 
 .btn-outline.is-primary {
-  border-color: #3e5f7a;
+  border-color: #7e9bb8;
 }
 
 .kicker {
-  color: #3e5f7a;
+  color: #7e9bb8;
   font-family: var(--font-mono);
   font-size: 11px;
   font-weight: 500;
@@ -157,7 +157,7 @@ body {
 
 .scan-line {
   width: 48px;
-  background: linear-gradient(90deg, transparent, rgba(62, 95, 122, 0.45), transparent);
+  background: linear-gradient(90deg, transparent, rgba(126, 155, 184), 0.45), transparent);
 }
 
 @media (prefers-reduced-motion: no-preference) {

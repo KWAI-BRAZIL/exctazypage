@@ -2,7 +2,6 @@ import Link from "next/link";
 import { Briefcase, Network } from "lucide-react";
 import { Logo } from "@/components/Logo";
 import { NeuralField } from "@/components/NeuralField";
-import { CTA_LABEL, WHATSAPP } from "@/lib/constants";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 
 export default function HomePage() {
@@ -32,14 +31,6 @@ export default function HomePage() {
             <span className="flex-1 text-left leading-tight">Contratar nossos serviços</span>
           </Link>
         </div>
-        <a
-          href={WHATSAPP.consultants}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="mt-6 inline-flex font-mono text-[11px] uppercase tracking-[0.16em] text-signal hover:underline"
-        >
-          {CTA_LABEL}
-        </a>
       </section>
     </main>
   );

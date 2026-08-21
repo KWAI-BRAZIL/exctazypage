@@ -33,13 +33,13 @@ export function RadarChart() {
       {axes.map(([x, y], i) => (
         <line key={SCORES[i].label} x1={CX} y1={CY} x2={x} y2={y} stroke="#3a342c" strokeWidth="1" />
       ))}
-      <polygon points={polygon} fill="rgba(62,95,122,0.22)" stroke="#3e5f7a" strokeWidth="1.4" />
+      <polygon points={polygon} fill="rgba(126,155,184,0.22)" stroke="#7e9bb8" strokeWidth="1.4" />
       {SCORES.map((s, i) => {
         const [x, y] = point(i, s.value);
         const [lx, ly] = point(i, 118);
         return (
           <g key={s.label}>
-            <circle cx={x} cy={y} r="3.2" fill="#3e5f7a" />
+            <circle cx={x} cy={y} r="3.2" fill="#7e9bb8" />
             <text
               x={lx}
               y={ly}
@@ -72,7 +72,7 @@ export function ScoreRing({ value = 72 }: { value?: number }) {
           cy="80"
           r={r}
           fill="none"
-          stroke="#3e5f7a"
+          stroke="#7e9bb8"
           strokeWidth="2.4"
           strokeDasharray={`${dash} ${c}`}
           strokeLinecap="square"
