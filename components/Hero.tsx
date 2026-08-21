@@ -32,7 +32,7 @@ export function Hero() {
             <a href={WHATSAPP.consultants} target="_blank" rel="noopener noreferrer" className="btn-primary">
               {CTA_LABEL}
             </a>
-            <Link href="#ecossistema" className="btn-ghost">
+            <Link href="#beneficios" className="btn-ghost">
               Conhecer o ecossistema
             </Link>
           </div>

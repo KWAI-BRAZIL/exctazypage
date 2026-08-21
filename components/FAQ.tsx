@@ -20,6 +20,10 @@ const items = [
     a: "Sim. Os membros terão acesso ao Sistema de Engenharia da Percepção® como uma das metodologias centrais do ecossistema.",
   },
   {
+    q: "Tem mentoria e acompanhamento?",
+    a: "Sim. O ecossistema inclui mentoria mensal e acompanhamento estratégico de crescimento: o negócio é revisado, questionado e ajustado ao longo do tempo — não apenas assistido em aulas.",
+  },
+  {
     q: "Teremos aulas novas?",
     a: "Sim. A Neuro Business possui uma proposta de evolução contínua, com novos temas, análises e experiências.",
   },

@@ -1,4 +1,6 @@
 const included = [
+  "Mentoria mensal",
+  "Acompanhamento estratégico e de crescimento",
   "Comunidade exclusiva de empreendedores",
   "Conteúdos sobre Neuromarketing",
   "Método S.E.P.®",

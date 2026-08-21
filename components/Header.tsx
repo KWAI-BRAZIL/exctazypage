@@ -3,7 +3,7 @@ import { LogoLink } from "./Logo";
 import { CTA_LABEL, WHATSAPP } from "@/lib/constants";
 
 const links = [
-  { href: "/ecossistema#ecossistema", label: "Ecossistema" },
+  { href: "/ecossistema#beneficios", label: "Ecossistema" },
   { href: "/ecossistema#metodo", label: "Método S.E.P." },
   { href: "/ecossistema#raio-x", label: "Raio-X" },
   { href: "/ecossistema#faq", label: "FAQ" },

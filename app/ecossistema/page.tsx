@@ -4,7 +4,7 @@ import { BigIdeaSection } from "@/components/BigIdeaSection";
 import { BusinessAnalysisSection } from "@/components/BusinessAnalysisSection";
 import { ComparisonSection } from "@/components/ComparisonSection";
 import { CTA } from "@/components/CTA";
-import { EcosystemSection } from "@/components/EcosystemSection";
+import { EcosystemBenefitsSection } from "@/components/EcosystemBenefitsSection";
 import { FAQ } from "@/components/FAQ";
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -29,6 +29,7 @@ export default function EcossistemaPage() {
         <ProblemSection />
         <BigIdeaSection />
         <EcosystemSection />
+        <EcosystemBenefitsSection />
         <SEPMethodSection />
         <BenefitsSection />
         <BusinessAnalysisSection />
