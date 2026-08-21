@@ -13,7 +13,7 @@ export function BusinessAnalysisSection() {
           <div className="relative overflow-hidden bg-ink p-6 md:p-8">
             <div className="scan-line pointer-events-none absolute inset-y-0 left-0 z-10" />
             <p className="mono text-[10px] text-signal">Empresa analisada</p>
-            <p className="mt-2 text-xl font-medium text-paper">Operação fictícia · exemplo didático</p>
+            <p className="mt-2 text-xl font-medium text-paper">Operação FocoPill · exemplo didático</p>
             <div className="mt-8 grid items-center gap-6 lg:grid-cols-[auto_1fr]">
               <ScoreRing value={72} />
               <div className="h-[280px] min-h-[240px]">
